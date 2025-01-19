@@ -18,13 +18,13 @@ ui <- fluidPage(
                             label  = "Number of tiles wide:",
                             min = 3,
                             max = 25,
-                            value = 3)),
+                            value = 7)),
         column(width = 6,
                numericInput(inputId = "n_rows",
                             label  = "Number of tiles tall:",
                             min = 3,
                             max = 25,
-                            value = 3))
+                            value = 7))
       ),
       fluidRow(
         column(width = 6,
@@ -106,6 +106,8 @@ ui <- fluidPage(
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+  
+  output$svg_embed <- renderUI(expr = HTML(paste0("<img src = 'example.svg' height = '100%'>")))
   
   workspace <- reactiveValues(temp_dir = "www",
                               current_output = NULL,
