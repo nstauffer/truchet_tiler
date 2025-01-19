@@ -1,0 +1,971 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' class='svglite' width='800px' height='800px' viewBox='0 0 8 8'><rect width='100%' height='100%' style='stroke: none; fill: #1D1B0B;'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 1 0.082 A 0.918 0.918 0 0 0 0.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 1 0.329 A 0.671 0.671 0 0 0 0.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 1 0.671 A 0.329 0.329 0 0 0 0.671 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 1 0.918 A 0.082 0.082 0 0 0 0.918 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_TRUE' d='M 0.918 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_TRUE' d='M 0.671 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_TRUE' d='M 0.329 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_TRUE' d='M 0.082 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 0.918 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 0.671 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 0.329 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 0.082 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-right-TRUE' d='M 1 3.082 L 0.506 3.082 A 0.418 0.418 0 0 0 0.506 3.918 L 1 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-right-TRUE' d='M 1 3.329 L 0.506 3.329 A 0.171 0.171 0 0 0 0.506 3.671 L 1 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-right-FALSE' d='M 1 4.082 L 0.506 4.082 A 0.418 0.418 0 0 0 0.506 4.918 L 1 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-right-FALSE' d='M 1 4.329 L 0.506 4.329 A 0.171 0.171 0 0 0 0.506 4.671 L 1 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 0.918 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 0.671 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 0.329 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 0.082 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-right-TRUE' d='M 1 6.082 L 0.506 6.082 A 0.418 0.418 0 0 0 0.506 6.918 L 1 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-right-TRUE' d='M 1 6.329 L 0.506 6.329 A 0.171 0.171 0 0 0 0.506 6.671 L 1 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 0.082 7 A 0.918 0.918 0 0 0 1 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 0.329 7 A 0.671 0.671 0 0 0 1 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 0.671 7 A 0.329 0.329 0 0 0 1 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 0.918 7 A 0.082 0.082 0 0 0 1 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_TRUE' d='M 1 0.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_TRUE' d='M 1 0.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_TRUE' d='M 1 0.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_TRUE' d='M 1 0.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 1.082 A 0.918 0.918 0 0 0 1.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 1.329 A 0.671 0.671 0 0 0 1.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 1.671 A 0.329 0.329 0 0 0 1.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 1.918 A 0.082 0.082 0 0 0 1.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 1.918 3 A 0.918 0.918 0 0 0 1 2.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 1.671 3 A 0.671 0.671 0 0 0 1 2.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 1.329 3 A 0.329 0.329 0 0 0 1 2.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 1.082 3 A 0.082 0.082 0 0 0 1 2.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 1.918 4 A 0.918 0.918 0 0 0 1 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 1.671 4 A 0.671 0.671 0 0 0 1 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 1.329 4 A 0.329 0.329 0 0 0 1 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 1.082 4 A 0.082 0.082 0 0 0 1 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 4.082 A 0.918 0.918 0 0 0 1.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 4.329 A 0.671 0.671 0 0 0 1.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 4.671 A 0.329 0.329 0 0 0 1.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_TRUE' d='M 2 4.918 A 0.082 0.082 0 0 0 1.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 2 5.082 A 0.918 0.918 0 0 0 1.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 2 5.329 A 0.671 0.671 0 0 0 1.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 2 5.671 A 0.329 0.329 0 0 0 1.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 2 5.918 A 0.082 0.082 0 0 0 1.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-TRUE_TRUE' d='M 1 6.918 A 0.918 0.918 0 0 0 1.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-TRUE_TRUE' d='M 1 6.671 A 0.671 0.671 0 0 0 1.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-TRUE_TRUE' d='M 1 6.329 A 0.329 0.329 0 0 0 1.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-TRUE_TRUE' d='M 1 6.082 A 0.082 0.082 0 0 0 1.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 1 7.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 1 7.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 1 7.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 1 7.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 2 0.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 2 0.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 2 0.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-TRUE_FALSE' d='M 2 0.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.918 2 A 0.918 0.918 0 0 0 2 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.671 2 A 0.671 0.671 0 0 0 2 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.329 2 A 0.329 0.329 0 0 0 2 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.082 2 A 0.082 0.082 0 0 0 2 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 3 2.082 A 0.918 0.918 0 0 0 2.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 3 2.329 A 0.671 0.671 0 0 0 2.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 3 2.671 A 0.329 0.329 0 0 0 2.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_FALSE' d='M 3 2.918 A 0.082 0.082 0 0 0 2.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 2.082 3 A 0.918 0.918 0 0 0 3 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 2.329 3 A 0.671 0.671 0 0 0 3 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 2.671 3 A 0.329 0.329 0 0 0 3 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 2.918 3 A 0.082 0.082 0 0 0 3 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.918 5 A 0.918 0.918 0 0 0 2 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.671 5 A 0.671 0.671 0 0 0 2 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.329 5 A 0.329 0.329 0 0 0 2 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 2.082 5 A 0.082 0.082 0 0 0 2 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 3 5.082 A 0.918 0.918 0 0 0 2.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 3 5.329 A 0.671 0.671 0 0 0 2.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 3 5.671 A 0.329 0.329 0 0 0 2.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 3 5.918 A 0.082 0.082 0 0 0 2.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 2.918 7 A 0.918 0.918 0 0 0 2 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 2.671 7 A 0.671 0.671 0 0 0 2 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 2.329 7 A 0.329 0.329 0 0 0 2 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 2.082 7 A 0.082 0.082 0 0 0 2 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-TRUE' d='M 2.082 7 L 2.082 7.494 A 0.418 0.418 0 0 0 2.918 7.494 L 2.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-TRUE' d='M 2.329 7 L 2.329 7.494 A 0.171 0.171 0 0 0 2.671 7.494 L 2.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom-TRUE' d='M 3.918 1 L 3.918 0.506 A 0.418 0.418 0 0 0 3.082 0.506 L 3.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom-TRUE' d='M 3.671 1 L 3.671 0.506 A 0.171 0.171 0 0 0 3.329 0.506 L 3.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 3.082 1 A 0.918 0.918 0 0 0 4 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 3.329 1 A 0.671 0.671 0 0 0 4 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 3.671 1 A 0.329 0.329 0 0 0 4 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 3.918 1 A 0.082 0.082 0 0 0 4 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 2.082 A 0.918 0.918 0 0 0 3.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 2.329 A 0.671 0.671 0 0 0 3.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 2.671 A 0.329 0.329 0 0 0 3.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 2.918 A 0.082 0.082 0 0 0 3.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 3.082 A 0.918 0.918 0 0 0 3.082 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 3.329 A 0.671 0.671 0 0 0 3.329 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 3.671 A 0.329 0.329 0 0 0 3.671 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 3.918 A 0.082 0.082 0 0 0 3.918 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 3.918 5 A 0.918 0.918 0 0 0 3 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 3.671 5 A 0.671 0.671 0 0 0 3 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 3.329 5 A 0.329 0.329 0 0 0 3 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_FALSE' d='M 3.082 5 A 0.082 0.082 0 0 0 3 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 5.082 A 0.918 0.918 0 0 0 3.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 5.329 A 0.671 0.671 0 0 0 3.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 5.671 A 0.329 0.329 0 0 0 3.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-FALSE_FALSE' d='M 4 5.918 A 0.082 0.082 0 0 0 3.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 3.918 7 A 0.918 0.918 0 0 0 3 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 3.671 7 A 0.671 0.671 0 0 0 3 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 3.329 7 A 0.329 0.329 0 0 0 3 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 3.082 7 A 0.082 0.082 0 0 0 3 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-TRUE' d='M 3.082 7 L 3.082 7.494 A 0.418 0.418 0 0 0 3.918 7.494 L 3.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-TRUE' d='M 3.329 7 L 3.329 7.494 A 0.171 0.171 0 0 0 3.671 7.494 L 3.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom-FALSE' d='M 4.918 1 L 4.918 0.506 A 0.418 0.418 0 0 0 4.082 0.506 L 4.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom-FALSE' d='M 4.671 1 L 4.671 0.506 A 0.171 0.171 0 0 0 4.329 0.506 L 4.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 4.918 2 A 0.918 0.918 0 0 0 4 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 4.671 2 A 0.671 0.671 0 0 0 4 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 4.329 2 A 0.329 0.329 0 0 0 4 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-FALSE_TRUE' d='M 4.082 2 A 0.082 0.082 0 0 0 4 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 5 2.082 A 0.918 0.918 0 0 0 4.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 5 2.329 A 0.671 0.671 0 0 0 4.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 5 2.671 A 0.329 0.329 0 0 0 4.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_right-TRUE_TRUE' d='M 5 2.918 A 0.082 0.082 0 0 0 4.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.082 3 A 0.918 0.918 0 0 0 5 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.329 3 A 0.671 0.671 0 0 0 5 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.671 3 A 0.329 0.329 0 0 0 5 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.918 3 A 0.082 0.082 0 0 0 5 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 4.918 5 A 0.918 0.918 0 0 0 4 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 4.671 5 A 0.671 0.671 0 0 0 4 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 4.329 5 A 0.329 0.329 0 0 0 4 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 4.082 5 A 0.082 0.082 0 0 0 4 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.082 5 A 0.918 0.918 0 0 0 5 5.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.329 5 A 0.671 0.671 0 0 0 5 5.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.671 5 A 0.329 0.329 0 0 0 5 5.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 4.918 5 A 0.082 0.082 0 0 0 5 5.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 4.082 6 A 0.918 0.918 0 0 0 5 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 4.329 6 A 0.671 0.671 0 0 0 5 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 4.671 6 A 0.329 0.329 0 0 0 5 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 4.918 6 A 0.082 0.082 0 0 0 5 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-FALSE' d='M 4.082 7 L 4.082 7.494 A 0.418 0.418 0 0 0 4.918 7.494 L 4.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-FALSE' d='M 4.329 7 L 4.329 7.494 A 0.171 0.171 0 0 0 4.671 7.494 L 4.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 0.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 0.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 0.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 0.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 5 1.918 A 0.918 0.918 0 0 0 5.918 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 5 1.671 A 0.671 0.671 0 0 0 5.671 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 5 1.329 A 0.329 0.329 0 0 0 5.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 5 1.082 A 0.082 0.082 0 0 0 5.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 2.918 A 0.918 0.918 0 0 0 5.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 2.671 A 0.671 0.671 0 0 0 5.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 2.329 A 0.329 0.329 0 0 0 5.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 2.082 A 0.082 0.082 0 0 0 5.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 3.918 A 0.918 0.918 0 0 0 5.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 3.671 A 0.671 0.671 0 0 0 5.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 3.329 A 0.329 0.329 0 0 0 5.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 3.082 A 0.082 0.082 0 0 0 5.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_FALSE' d='M 5.082 4 A 0.918 0.918 0 0 0 6 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_FALSE' d='M 5.329 4 A 0.671 0.671 0 0 0 6 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_FALSE' d='M 5.671 4 A 0.329 0.329 0 0 0 6 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_FALSE' d='M 5.918 4 A 0.082 0.082 0 0 0 6 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 5.918 A 0.918 0.918 0 0 0 5.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 5.671 A 0.671 0.671 0 0 0 5.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 5.329 A 0.329 0.329 0 0 0 5.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 5.082 A 0.082 0.082 0 0 0 5.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 6.918 A 0.918 0.918 0 0 0 5.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 6.671 A 0.671 0.671 0 0 0 5.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 6.329 A 0.329 0.329 0 0 0 5.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_TRUE' d='M 5 6.082 A 0.082 0.082 0 0 0 5.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 7.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 7.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 7.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left_right-FALSE_FALSE' d='M 5 7.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom-TRUE' d='M 6.918 1 L 6.918 0.506 A 0.418 0.418 0 0 0 6.082 0.506 L 6.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom-TRUE' d='M 6.671 1 L 6.671 0.506 A 0.171 0.171 0 0 0 6.329 0.506 L 6.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 6.082 1 A 0.918 0.918 0 0 0 7 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 6.329 1 A 0.671 0.671 0 0 0 7 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 6.671 1 A 0.329 0.329 0 0 0 7 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_FALSE' d='M 6.918 1 A 0.082 0.082 0 0 0 7 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 6.918 3 A 0.918 0.918 0 0 0 6 2.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 6.671 3 A 0.671 0.671 0 0 0 6 2.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 6.329 3 A 0.329 0.329 0 0 0 6 2.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 6.082 3 A 0.082 0.082 0 0 0 6 2.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 6.082 3 A 0.918 0.918 0 0 0 7 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 6.329 3 A 0.671 0.671 0 0 0 7 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 6.671 3 A 0.329 0.329 0 0 0 7 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-TRUE_TRUE' d='M 6.918 3 A 0.082 0.082 0 0 0 7 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 6.082 4 A 0.918 0.918 0 0 0 7 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 6.329 4 A 0.671 0.671 0 0 0 7 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 6.671 4 A 0.329 0.329 0 0 0 7 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_right-FALSE_TRUE' d='M 6.918 4 A 0.082 0.082 0 0 0 7 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 5.918 A 0.918 0.918 0 0 0 6.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 5.671 A 0.671 0.671 0 0 0 6.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 5.329 A 0.329 0.329 0 0 0 6.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 5.082 A 0.082 0.082 0 0 0 6.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 6.918 A 0.918 0.918 0 0 0 6.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 6.671 A 0.671 0.671 0 0 0 6.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 6.329 A 0.329 0.329 0 0 0 6.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 6 6.082 A 0.082 0.082 0 0 0 6.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-FALSE' d='M 6.082 7 L 6.082 7.494 A 0.418 0.418 0 0 0 6.918 7.494 L 6.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top-FALSE' d='M 6.329 7 L 6.329 7.494 A 0.171 0.171 0 0 0 6.671 7.494 L 6.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 7.918 1 A 0.918 0.918 0 0 0 7 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 7.671 1 A 0.671 0.671 0 0 0 7 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 7.329 1 A 0.329 0.329 0 0 0 7 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-bottom_left-TRUE_FALSE' d='M 7.082 1 A 0.082 0.082 0 0 0 7 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 7.918 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 7.671 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 7.329 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-TRUE_FALSE' d='M 7.082 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-FALSE' d='M 7 2.918 L 7.494 2.918 A 0.418 0.418 0 0 0 7.494 2.082 L 7 2.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-FALSE' d='M 7 2.671 L 7.494 2.671 A 0.171 0.171 0 0 0 7.494 2.329 L 7 2.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-TRUE' d='M 7 3.918 L 7.494 3.918 A 0.418 0.418 0 0 0 7.494 3.082 L 7 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-TRUE' d='M 7 3.671 L 7.494 3.671 A 0.171 0.171 0 0 0 7.494 3.329 L 7 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-TRUE' d='M 7 4.918 L 7.494 4.918 A 0.418 0.418 0 0 0 7.494 4.082 L 7 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-TRUE' d='M 7 4.671 L 7.494 4.671 A 0.171 0.171 0 0 0 7.494 4.329 L 7 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 7.918 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 7.671 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 7.329 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_bottom-FALSE_FALSE' d='M 7.082 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-FALSE' d='M 7 6.918 L 7.494 6.918 A 0.418 0.418 0 0 0 7.494 6.082 L 7 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-left-FALSE' d='M 7 6.671 L 7.494 6.671 A 0.171 0.171 0 0 0 7.494 6.329 L 7 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 7 7.918 A 0.918 0.918 0 0 0 7.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 7 7.671 A 0.671 0.671 0 0 0 7.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 7 7.329 A 0.329 0.329 0 0 0 7.329 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-low-top_left-FALSE_FALSE' d='M 7 7.082 A 0.082 0.082 0 0 0 7.082 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_TRUE' d='M 1 0.2055 A 0.7945 0.7945 0 0 0 0.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_TRUE' d='M 1 0.7945 A 0.2055 0.2055 0 0 0 0.7945 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-TRUE_TRUE' d='M 0.7945 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-TRUE_TRUE' d='M 0.2055 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-TRUE_FALSE' d='M 0.7945 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-TRUE_FALSE' d='M 0.2055 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-right-TRUE' d='M 1 3.2055 L 0.506 3.2055 A 0.2945 0.2945 0 0 0 0.506 3.7945 L 1 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-right-FALSE' d='M 1 4.2055 L 0.506 4.2055 A 0.2945 0.2945 0 0 0 0.506 4.7945 L 1 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-FALSE_FALSE' d='M 0.7945 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-FALSE_FALSE' d='M 0.2055 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-right-TRUE' d='M 1 6.2055 L 0.506 6.2055 A 0.2945 0.2945 0 0 0 0.506 6.7945 L 1 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_TRUE' d='M 0.2055 7 A 0.7945 0.7945 0 0 0 1 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_TRUE' d='M 0.7945 7 A 0.2055 0.2055 0 0 0 1 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-TRUE_TRUE' d='M 1 0.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-TRUE_TRUE' d='M 1 0.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_TRUE' d='M 2 1.2055 A 0.7945 0.7945 0 0 0 1.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_TRUE' d='M 2 1.7945 A 0.2055 0.2055 0 0 0 1.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_FALSE' d='M 1.7945 3 A 0.7945 0.7945 0 0 0 1 2.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_FALSE' d='M 1.2055 3 A 0.2055 0.2055 0 0 0 1 2.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 1.7945 4 A 0.7945 0.7945 0 0 0 1 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 1.2055 4 A 0.2055 0.2055 0 0 0 1 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_TRUE' d='M 2 4.2055 A 0.7945 0.7945 0 0 0 1.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_TRUE' d='M 2 4.7945 A 0.2055 0.2055 0 0 0 1.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_FALSE' d='M 2 5.2055 A 0.7945 0.7945 0 0 0 1.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_FALSE' d='M 2 5.7945 A 0.2055 0.2055 0 0 0 1.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-TRUE_TRUE' d='M 1 6.7945 A 0.7945 0.7945 0 0 0 1.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-TRUE_TRUE' d='M 1 6.2055 A 0.2055 0.2055 0 0 0 1.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-TRUE_FALSE' d='M 1 7.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-TRUE_FALSE' d='M 1 7.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 2 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-TRUE_FALSE' d='M 2 0.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-TRUE_FALSE' d='M 2 0.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 2.7945 2 A 0.7945 0.7945 0 0 0 2 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 2.2055 2 A 0.2055 0.2055 0 0 0 2 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_FALSE' d='M 3 2.2055 A 0.7945 0.7945 0 0 0 2.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_FALSE' d='M 3 2.7945 A 0.2055 0.2055 0 0 0 2.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_FALSE' d='M 2.2055 3 A 0.7945 0.7945 0 0 0 3 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_FALSE' d='M 2.7945 3 A 0.2055 0.2055 0 0 0 3 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 2.7945 5 A 0.7945 0.7945 0 0 0 2 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 2.2055 5 A 0.2055 0.2055 0 0 0 2 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 3 5.2055 A 0.7945 0.7945 0 0 0 2.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 3 5.7945 A 0.2055 0.2055 0 0 0 2.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 2.7945 7 A 0.7945 0.7945 0 0 0 2 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 2.2055 7 A 0.2055 0.2055 0 0 0 2 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top-TRUE' d='M 2.2055 7 L 2.2055 7.494 A 0.2945 0.2945 0 0 0 2.7945 7.494 L 2.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom-TRUE' d='M 3.7945 1 L 3.7945 0.506 A 0.2945 0.2945 0 0 0 3.2055 0.506 L 3.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 3.2055 1 A 0.7945 0.7945 0 0 0 4 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 3.7945 1 A 0.2055 0.2055 0 0 0 4 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 4 2.2055 A 0.7945 0.7945 0 0 0 3.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 4 2.7945 A 0.2055 0.2055 0 0 0 3.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 4 3.2055 A 0.7945 0.7945 0 0 0 3.2055 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 4 3.7945 A 0.2055 0.2055 0 0 0 3.7945 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_FALSE' d='M 3.7945 5 A 0.7945 0.7945 0 0 0 3 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_FALSE' d='M 3.2055 5 A 0.2055 0.2055 0 0 0 3 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 4 5.2055 A 0.7945 0.7945 0 0 0 3.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-FALSE_FALSE' d='M 4 5.7945 A 0.2055 0.2055 0 0 0 3.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 3.7945 7 A 0.7945 0.7945 0 0 0 3 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 3.2055 7 A 0.2055 0.2055 0 0 0 3 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top-TRUE' d='M 3.2055 7 L 3.2055 7.494 A 0.2945 0.2945 0 0 0 3.7945 7.494 L 3.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom-FALSE' d='M 4.7945 1 L 4.7945 0.506 A 0.2945 0.2945 0 0 0 4.2055 0.506 L 4.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 4.7945 2 A 0.7945 0.7945 0 0 0 4 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-FALSE_TRUE' d='M 4.2055 2 A 0.2055 0.2055 0 0 0 4 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_TRUE' d='M 5 2.2055 A 0.7945 0.7945 0 0 0 4.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_right-TRUE_TRUE' d='M 5 2.7945 A 0.2055 0.2055 0 0 0 4.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 4.2055 3 A 0.7945 0.7945 0 0 0 5 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 4.7945 3 A 0.2055 0.2055 0 0 0 5 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 4.7945 5 A 0.7945 0.7945 0 0 0 4 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 4.2055 5 A 0.2055 0.2055 0 0 0 4 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 4.2055 5 A 0.7945 0.7945 0 0 0 5 5.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 4.7945 5 A 0.2055 0.2055 0 0 0 5 5.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_TRUE' d='M 4.2055 6 A 0.7945 0.7945 0 0 0 5 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_TRUE' d='M 4.7945 6 A 0.2055 0.2055 0 0 0 5 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top-FALSE' d='M 4.2055 7 L 4.2055 7.494 A 0.2945 0.2945 0 0 0 4.7945 7.494 L 4.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-FALSE_FALSE' d='M 5 0.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-FALSE_FALSE' d='M 5 0.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 5 1.7945 A 0.7945 0.7945 0 0 0 5.7945 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 5 1.2055 A 0.2055 0.2055 0 0 0 5.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 2.7945 A 0.7945 0.7945 0 0 0 5.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 2.2055 A 0.2055 0.2055 0 0 0 5.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 3.7945 A 0.7945 0.7945 0 0 0 5.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 3.2055 A 0.2055 0.2055 0 0 0 5.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_FALSE' d='M 5.2055 4 A 0.7945 0.7945 0 0 0 6 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_FALSE' d='M 5.7945 4 A 0.2055 0.2055 0 0 0 6 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 5.7945 A 0.7945 0.7945 0 0 0 5.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 5.2055 A 0.2055 0.2055 0 0 0 5.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 6.7945 A 0.7945 0.7945 0 0 0 5.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_TRUE' d='M 5 6.2055 A 0.2055 0.2055 0 0 0 5.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-FALSE_FALSE' d='M 5 7.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left_right-FALSE_FALSE' d='M 5 7.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 6 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom-TRUE' d='M 6.7945 1 L 6.7945 0.506 A 0.2945 0.2945 0 0 0 6.2055 0.506 L 6.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_FALSE' d='M 6.2055 1 A 0.7945 0.7945 0 0 0 7 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_FALSE' d='M 6.7945 1 A 0.2055 0.2055 0 0 0 7 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 6.7945 3 A 0.7945 0.7945 0 0 0 6 2.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 6.2055 3 A 0.2055 0.2055 0 0 0 6 2.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 6.2055 3 A 0.7945 0.7945 0 0 0 7 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-TRUE_TRUE' d='M 6.7945 3 A 0.2055 0.2055 0 0 0 7 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_TRUE' d='M 6.2055 4 A 0.7945 0.7945 0 0 0 7 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_right-FALSE_TRUE' d='M 6.7945 4 A 0.2055 0.2055 0 0 0 7 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 6 5.7945 A 0.7945 0.7945 0 0 0 6.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 6 5.2055 A 0.2055 0.2055 0 0 0 6.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 6 6.7945 A 0.7945 0.7945 0 0 0 6.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 6 6.2055 A 0.2055 0.2055 0 0 0 6.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top-FALSE' d='M 6.2055 7 L 6.2055 7.494 A 0.2945 0.2945 0 0 0 6.7945 7.494 L 6.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 7.7945 1 A 0.7945 0.7945 0 0 0 7 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-bottom_left-TRUE_FALSE' d='M 7.2055 1 A 0.2055 0.2055 0 0 0 7 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-TRUE_FALSE' d='M 7.7945 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-TRUE_FALSE' d='M 7.2055 1 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left-FALSE' d='M 7 2.7945 L 7.494 2.7945 A 0.2945 0.2945 0 0 0 7.494 2.2055 L 7 2.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left-TRUE' d='M 7 3.7945 L 7.494 3.7945 A 0.2945 0.2945 0 0 0 7.494 3.2055 L 7 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left-TRUE' d='M 7 4.7945 L 7.494 4.7945 A 0.2945 0.2945 0 0 0 7.494 4.2055 L 7 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-FALSE_FALSE' d='M 7.7945 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_bottom-FALSE_FALSE' d='M 7.2055 5 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-left-FALSE' d='M 7 6.7945 L 7.494 6.7945 A 0.2945 0.2945 0 0 0 7.494 6.2055 L 7 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 7 7.7945 A 0.7945 0.7945 0 0 0 7.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-low-top_left-FALSE_FALSE' d='M 7 7.2055 A 0.2055 0.2055 0 0 0 7.2055 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-right-TRUE' d='M 1 1.082 L 0.506 1.082 A 0.418 0.418 0 0 0 0.506 1.918 L 1 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-right-TRUE' d='M 1 1.329 L 0.506 1.329 A 0.171 0.171 0 0 0 0.506 1.671 L 1 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-right-FALSE' d='M 1 2.082 L 0.506 2.082 A 0.418 0.418 0 0 0 0.506 2.918 L 1 2.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-right-FALSE' d='M 1 2.329 L 0.506 2.329 A 0.171 0.171 0 0 0 0.506 2.671 L 1 2.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 0.918 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.918 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 0.671 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.671 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 0.329 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.329 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 0.082 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.082 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 0.918 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 0.671 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 0.329 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 0.082 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-right-TRUE' d='M 1 5.082 L 0.506 5.082 A 0.418 0.418 0 0 0 0.506 5.918 L 1 5.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-right-TRUE' d='M 1 5.329 L 0.506 5.329 A 0.171 0.171 0 0 0 0.506 5.671 L 1 5.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 0.918 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 0.671 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 0.329 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.329 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 0.082 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.082 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom-TRUE' d='M 1.918 1 L 1.918 0.506 A 0.418 0.418 0 0 0 1.082 0.506 L 1.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom-TRUE' d='M 1.671 1 L 1.671 0.506 A 0.171 0.171 0 0 0 1.329 0.506 L 1.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_TRUE' d='M 1 1.918 A 0.918 0.918 0 0 0 1.918 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_TRUE' d='M 1 1.671 A 0.671 0.671 0 0 0 1.671 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_TRUE' d='M 1 1.329 A 0.329 0.329 0 0 0 1.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_TRUE' d='M 1 1.082 A 0.082 0.082 0 0 0 1.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.082 2 A 0.918 0.918 0 0 0 2 2.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.329 2 A 0.671 0.671 0 0 0 2 2.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.671 2 A 0.329 0.329 0 0 0 2 2.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.918 2 A 0.082 0.082 0 0 0 2 2.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.082 3 A 0.918 0.918 0 0 0 2 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.329 3 A 0.671 0.671 0 0 0 2 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.671 3 A 0.329 0.329 0 0 0 2 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 1.918 3 A 0.082 0.082 0 0 0 2 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 1 4.918 A 0.918 0.918 0 0 0 1.918 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 1 4.671 A 0.671 0.671 0 0 0 1.671 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 1 4.329 A 0.329 0.329 0 0 0 1.329 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 1 4.082 A 0.082 0.082 0 0 0 1.082 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 1 5.918 A 0.918 0.918 0 0 0 1.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 1 5.671 A 0.671 0.671 0 0 0 1.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 1 5.329 A 0.329 0.329 0 0 0 1.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 1 5.082 A 0.082 0.082 0 0 0 1.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 2 6.082 A 0.918 0.918 0 0 0 1.082 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 2 6.329 A 0.671 0.671 0 0 0 1.329 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 2 6.671 A 0.329 0.329 0 0 0 1.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 2 6.918 A 0.082 0.082 0 0 0 1.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top-TRUE' d='M 1.082 7 L 1.082 7.494 A 0.418 0.418 0 0 0 1.918 7.494 L 1.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top-TRUE' d='M 1.329 7 L 1.329 7.494 A 0.171 0.171 0 0 0 1.671 7.494 L 1.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom-TRUE' d='M 2.918 1 L 2.918 0.506 A 0.418 0.418 0 0 0 2.082 0.506 L 2.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom-TRUE' d='M 2.671 1 L 2.671 0.506 A 0.171 0.171 0 0 0 2.329 0.506 L 2.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 2.082 1 A 0.918 0.918 0 0 0 3 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 2.329 1 A 0.671 0.671 0 0 0 3 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 2.671 1 A 0.329 0.329 0 0 0 3 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 2.918 1 A 0.082 0.082 0 0 0 3 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 2 2.918 A 0.918 0.918 0 0 0 2.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 2 2.671 A 0.671 0.671 0 0 0 2.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 2 2.329 A 0.329 0.329 0 0 0 2.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_TRUE' d='M 2 2.082 A 0.082 0.082 0 0 0 2.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 2.918 4 A 0.918 0.918 0 0 0 2 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 2.671 4 A 0.671 0.671 0 0 0 2 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 2.329 4 A 0.329 0.329 0 0 0 2 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 2.082 4 A 0.082 0.082 0 0 0 2 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 2.082 4 A 0.918 0.918 0 0 0 3 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 2.329 4 A 0.671 0.671 0 0 0 3 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 2.671 4 A 0.329 0.329 0 0 0 3 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 2.918 4 A 0.082 0.082 0 0 0 3 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 2 5.918 A 0.918 0.918 0 0 0 2.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 2 5.671 A 0.671 0.671 0 0 0 2.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 2 5.329 A 0.329 0.329 0 0 0 2.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 2 5.082 A 0.082 0.082 0 0 0 2.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 2.082 6 A 0.918 0.918 0 0 0 3 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 2.329 6 A 0.671 0.671 0 0 0 3 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 2.671 6 A 0.329 0.329 0 0 0 3 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 2.918 6 A 0.082 0.082 0 0 0 3 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 2 7.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 2 7.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 2 7.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 2 7.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 3 0.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 3 0.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 3 0.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_TRUE' d='M 3 0.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 3.918 2 A 0.918 0.918 0 0 0 3 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 3.671 2 A 0.671 0.671 0 0 0 3 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 3.329 2 A 0.329 0.329 0 0 0 3 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 3.082 2 A 0.082 0.082 0 0 0 3 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_FALSE' d='M 3 2.918 A 0.918 0.918 0 0 0 3.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_FALSE' d='M 3 2.671 A 0.671 0.671 0 0 0 3.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_FALSE' d='M 3 2.329 A 0.329 0.329 0 0 0 3.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-TRUE_FALSE' d='M 3 2.082 A 0.082 0.082 0 0 0 3.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 3.918 A 0.918 0.918 0 0 0 3.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 3.671 A 0.671 0.671 0 0 0 3.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 3.329 A 0.329 0.329 0 0 0 3.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 3.082 A 0.082 0.082 0 0 0 3.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 3.082 4 A 0.918 0.918 0 0 0 4 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 3.329 4 A 0.671 0.671 0 0 0 4 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 3.671 4 A 0.329 0.329 0 0 0 4 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 3.918 4 A 0.082 0.082 0 0 0 4 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 5.918 A 0.918 0.918 0 0 0 3.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 5.671 A 0.671 0.671 0 0 0 3.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 5.329 A 0.329 0.329 0 0 0 3.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 3 5.082 A 0.082 0.082 0 0 0 3.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 3.082 6 A 0.918 0.918 0 0 0 4 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 3.329 6 A 0.671 0.671 0 0 0 4 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 3.671 6 A 0.329 0.329 0 0 0 4 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_TRUE' d='M 3.918 6 A 0.082 0.082 0 0 0 4 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_TRUE' d='M 3 7.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_TRUE' d='M 3 7.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_TRUE' d='M 3 7.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_TRUE' d='M 3 7.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 0.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 0.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 0.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 0.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 4.082 1 A 0.918 0.918 0 0 0 5 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 4.329 1 A 0.671 0.671 0 0 0 5 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 4.671 1 A 0.329 0.329 0 0 0 5 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-FALSE_FALSE' d='M 4.918 1 A 0.082 0.082 0 0 0 5 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 4 2.918 A 0.918 0.918 0 0 0 4.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 4 2.671 A 0.671 0.671 0 0 0 4.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 4 2.329 A 0.329 0.329 0 0 0 4.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_left-FALSE_FALSE' d='M 4 2.082 A 0.082 0.082 0 0 0 4.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_FALSE' d='M 4.918 4 A 0.918 0.918 0 0 0 4 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_FALSE' d='M 4.671 4 A 0.671 0.671 0 0 0 4 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_FALSE' d='M 4.329 4 A 0.329 0.329 0 0 0 4 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_FALSE' d='M 4.082 4 A 0.082 0.082 0 0 0 4 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 4.082 4 A 0.918 0.918 0 0 0 5 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 4.329 4 A 0.671 0.671 0 0 0 5 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 4.671 4 A 0.329 0.329 0 0 0 5 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_TRUE' d='M 4.918 4 A 0.082 0.082 0 0 0 5 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 4.918 6 A 0.918 0.918 0 0 0 4 5.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 4.671 6 A 0.671 0.671 0 0 0 4 5.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 4.329 6 A 0.329 0.329 0 0 0 4 5.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 4.082 6 A 0.082 0.082 0 0 0 4 5.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 4.918 7 A 0.918 0.918 0 0 0 4 6.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 4.671 7 A 0.671 0.671 0 0 0 4 6.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 4.329 7 A 0.329 0.329 0 0 0 4 6.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 4.082 7 A 0.082 0.082 0 0 0 4 6.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 7.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 7.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 7.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-TRUE_FALSE' d='M 4 7.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom-FALSE' d='M 5.918 1 L 5.918 0.506 A 0.418 0.418 0 0 0 5.082 0.506 L 5.082 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom-FALSE' d='M 5.671 1 L 5.671 0.506 A 0.171 0.171 0 0 0 5.329 0.506 L 5.329 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 1.082 A 0.918 0.918 0 0 0 5.082 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 1.329 A 0.671 0.671 0 0 0 5.329 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 1.671 A 0.329 0.329 0 0 0 5.671 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 1.918 A 0.082 0.082 0 0 0 5.918 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 2.082 A 0.918 0.918 0 0 0 5.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 2.329 A 0.671 0.671 0 0 0 5.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 2.671 A 0.329 0.329 0 0 0 5.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 2.918 A 0.082 0.082 0 0 0 5.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 3.082 A 0.918 0.918 0 0 0 5.082 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 3.329 A 0.671 0.671 0 0 0 5.329 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 3.671 A 0.329 0.329 0 0 0 5.671 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 6 3.918 A 0.082 0.082 0 0 0 5.918 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 5.918 5 A 0.918 0.918 0 0 0 5 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 5.671 5 A 0.671 0.671 0 0 0 5 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 5.329 5 A 0.329 0.329 0 0 0 5 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 5.082 5 A 0.082 0.082 0 0 0 5 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 5.082 A 0.918 0.918 0 0 0 5.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 5.329 A 0.671 0.671 0 0 0 5.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 5.671 A 0.329 0.329 0 0 0 5.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 6 5.918 A 0.082 0.082 0 0 0 5.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 6 6.082 A 0.918 0.918 0 0 0 5.082 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 6 6.329 A 0.671 0.671 0 0 0 5.329 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 6 6.671 A 0.329 0.329 0 0 0 5.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-TRUE_FALSE' d='M 6 6.918 A 0.082 0.082 0 0 0 5.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top-TRUE' d='M 5.082 7 L 5.082 7.494 A 0.418 0.418 0 0 0 5.918 7.494 L 5.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top-TRUE' d='M 5.329 7 L 5.329 7.494 A 0.171 0.171 0 0 0 5.671 7.494 L 5.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 0.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 0.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 0.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 0.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 0.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 0.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 0.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 0.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 6.918 2 A 0.918 0.918 0 0 0 6 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 6.671 2 A 0.671 0.671 0 0 0 6 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 6.329 2 A 0.329 0.329 0 0 0 6 1.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-TRUE_TRUE' d='M 6.082 2 A 0.082 0.082 0 0 0 6 1.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 6.082 2 A 0.918 0.918 0 0 0 7 2.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 6.329 2 A 0.671 0.671 0 0 0 7 2.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 6.671 2 A 0.329 0.329 0 0 0 7 2.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_right-TRUE_FALSE' d='M 6.918 2 A 0.082 0.082 0 0 0 7 2.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 6.918 4 A 0.918 0.918 0 0 0 6 3.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 6.671 4 A 0.671 0.671 0 0 0 6 3.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 6.329 4 A 0.329 0.329 0 0 0 6 3.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_TRUE' d='M 6.082 4 A 0.082 0.082 0 0 0 6 3.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 6.918 5 A 0.918 0.918 0 0 0 6 4.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 6.671 5 A 0.671 0.671 0 0 0 6 4.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 6.329 5 A 0.329 0.329 0 0 0 6 4.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_left-FALSE_FALSE' d='M 6.082 5 A 0.082 0.082 0 0 0 6 4.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 7 5.082 A 0.918 0.918 0 0 0 6.082 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 7 5.329 A 0.671 0.671 0 0 0 6.329 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 7 5.671 A 0.329 0.329 0 0 0 6.671 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_TRUE' d='M 7 5.918 A 0.082 0.082 0 0 0 6.918 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 7 6.082 A 0.918 0.918 0 0 0 6.082 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 7 6.329 A 0.671 0.671 0 0 0 6.329 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 7 6.671 A 0.329 0.329 0 0 0 6.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-bottom_right-FALSE_FALSE' d='M 7 6.918 A 0.082 0.082 0 0 0 6.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 7.918 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 7.918' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 7.671 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 7.671' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 7.329 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 7.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left_right-FALSE_FALSE' d='M 6 7.082 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 7.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left-FALSE' d='M 7 1.918 L 7.494 1.918 A 0.418 0.418 0 0 0 7.494 1.082 L 7 1.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left-FALSE' d='M 7 1.671 L 7.494 1.671 A 0.171 0.171 0 0 0 7.494 1.329 L 7 1.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 7.918 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.918 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 7.671 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.671 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 7.329 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.329 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_TRUE' d='M 7.082 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.082 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_TRUE' d='M 7.918 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.918 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_TRUE' d='M 7.671 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.671 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_TRUE' d='M 7.329 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.329 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_TRUE' d='M 7.082 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.082 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 7.918 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.918 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 7.671 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.671 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 7.329 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.329 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-TRUE_FALSE' d='M 7.082 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.082 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left-TRUE' d='M 7 5.918 L 7.494 5.918 A 0.418 0.418 0 0 0 7.494 5.082 L 7 5.082' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-left-TRUE' d='M 7 5.671 L 7.494 5.671 A 0.171 0.171 0 0 0 7.494 5.329 L 7 5.329' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 7.918 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.918 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 7.671 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.671 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 7.329 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.329 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='edging edging-high-top_bottom-FALSE_FALSE' d='M 7.082 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.082 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-right-TRUE' d='M 1 1.2055 L 0.506 1.2055 A 0.2945 0.2945 0 0 0 0.506 1.7945 L 1 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-right-FALSE' d='M 1 2.2055 L 0.506 2.2055 A 0.2945 0.2945 0 0 0 0.506 2.7945 L 1 2.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_TRUE' d='M 0.7945 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.7945 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_TRUE' d='M 0.2055 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.2055 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-TRUE_FALSE' d='M 0.7945 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-TRUE_FALSE' d='M 0.2055 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-right-TRUE' d='M 1 5.2055 L 0.506 5.2055 A 0.2945 0.2945 0 0 0 0.506 5.7945 L 1 5.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_FALSE' d='M 0.7945 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_FALSE' d='M 0.2055 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 0.2055 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom-TRUE' d='M 1.7945 1 L 1.7945 0.506 A 0.2945 0.2945 0 0 0 1.2055 0.506 L 1.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-TRUE_TRUE' d='M 1 1.7945 A 0.7945 0.7945 0 0 0 1.7945 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-TRUE_TRUE' d='M 1 1.2055 A 0.2055 0.2055 0 0 0 1.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_TRUE' d='M 1.2055 2 A 0.7945 0.7945 0 0 0 2 2.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_TRUE' d='M 1.7945 2 A 0.2055 0.2055 0 0 0 2 2.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_TRUE' d='M 1.2055 3 A 0.7945 0.7945 0 0 0 2 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_TRUE' d='M 1.7945 3 A 0.2055 0.2055 0 0 0 2 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 1 4.7945 A 0.7945 0.7945 0 0 0 1.7945 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 1 4.2055 A 0.2055 0.2055 0 0 0 1.2055 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_TRUE' d='M 1 5.7945 A 0.7945 0.7945 0 0 0 1.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_TRUE' d='M 1 5.2055 A 0.2055 0.2055 0 0 0 1.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-TRUE_FALSE' d='M 2 6.2055 A 0.7945 0.7945 0 0 0 1.2055 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-TRUE_FALSE' d='M 2 6.7945 A 0.2055 0.2055 0 0 0 1.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top-TRUE' d='M 1.2055 7 L 1.2055 7.494 A 0.2945 0.2945 0 0 0 1.7945 7.494 L 1.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom-TRUE' d='M 2.7945 1 L 2.7945 0.506 A 0.2945 0.2945 0 0 0 2.2055 0.506 L 2.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_TRUE' d='M 2.2055 1 A 0.7945 0.7945 0 0 0 3 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_TRUE' d='M 2.7945 1 A 0.2055 0.2055 0 0 0 3 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_TRUE' d='M 2 2.7945 A 0.7945 0.7945 0 0 0 2.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_TRUE' d='M 2 2.2055 A 0.2055 0.2055 0 0 0 2.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_TRUE' d='M 2.7945 4 A 0.7945 0.7945 0 0 0 2 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_TRUE' d='M 2.2055 4 A 0.2055 0.2055 0 0 0 2 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_FALSE' d='M 2.2055 4 A 0.7945 0.7945 0 0 0 3 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_FALSE' d='M 2.7945 4 A 0.2055 0.2055 0 0 0 3 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 2 5.7945 A 0.7945 0.7945 0 0 0 2.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 2 5.2055 A 0.2055 0.2055 0 0 0 2.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_FALSE' d='M 2.2055 6 A 0.7945 0.7945 0 0 0 3 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_FALSE' d='M 2.7945 6 A 0.2055 0.2055 0 0 0 3 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_TRUE' d='M 2 7.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_TRUE' d='M 2 7.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 3 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_TRUE' d='M 3 0.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_TRUE' d='M 3 0.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_TRUE' d='M 3.7945 2 A 0.7945 0.7945 0 0 0 3 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_TRUE' d='M 3.2055 2 A 0.2055 0.2055 0 0 0 3 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-TRUE_FALSE' d='M 3 2.7945 A 0.7945 0.7945 0 0 0 3.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-TRUE_FALSE' d='M 3 2.2055 A 0.2055 0.2055 0 0 0 3.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 3 3.7945 A 0.7945 0.7945 0 0 0 3.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 3 3.2055 A 0.2055 0.2055 0 0 0 3.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_FALSE' d='M 3.2055 4 A 0.7945 0.7945 0 0 0 4 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_FALSE' d='M 3.7945 4 A 0.2055 0.2055 0 0 0 4 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 3 5.7945 A 0.7945 0.7945 0 0 0 3.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 3 5.2055 A 0.2055 0.2055 0 0 0 3.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_TRUE' d='M 3.2055 6 A 0.7945 0.7945 0 0 0 4 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_TRUE' d='M 3.7945 6 A 0.2055 0.2055 0 0 0 4 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-TRUE_TRUE' d='M 3 7.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-TRUE_TRUE' d='M 3 7.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 4 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-TRUE_FALSE' d='M 4 0.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-TRUE_FALSE' d='M 4 0.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_FALSE' d='M 4.2055 1 A 0.7945 0.7945 0 0 0 5 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-FALSE_FALSE' d='M 4.7945 1 A 0.2055 0.2055 0 0 0 5 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 4 2.7945 A 0.7945 0.7945 0 0 0 4.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_left-FALSE_FALSE' d='M 4 2.2055 A 0.2055 0.2055 0 0 0 4.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_FALSE' d='M 4.7945 4 A 0.7945 0.7945 0 0 0 4 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_FALSE' d='M 4.2055 4 A 0.2055 0.2055 0 0 0 4 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_TRUE' d='M 4.2055 4 A 0.7945 0.7945 0 0 0 5 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_TRUE' d='M 4.7945 4 A 0.2055 0.2055 0 0 0 5 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_FALSE' d='M 4.7945 6 A 0.7945 0.7945 0 0 0 4 5.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_FALSE' d='M 4.2055 6 A 0.2055 0.2055 0 0 0 4 5.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_TRUE' d='M 4.7945 7 A 0.7945 0.7945 0 0 0 4 6.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_TRUE' d='M 4.2055 7 A 0.2055 0.2055 0 0 0 4 6.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-TRUE_FALSE' d='M 4 7.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-TRUE_FALSE' d='M 4 7.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 5 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom-FALSE' d='M 5.7945 1 L 5.7945 0.506 A 0.2945 0.2945 0 0 0 5.2055 0.506 L 5.2055 1' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_TRUE' d='M 6 1.2055 A 0.7945 0.7945 0 0 0 5.2055 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_TRUE' d='M 6 1.7945 A 0.2055 0.2055 0 0 0 5.7945 2' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_FALSE' d='M 6 2.2055 A 0.7945 0.7945 0 0 0 5.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_FALSE' d='M 6 2.7945 A 0.2055 0.2055 0 0 0 5.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_TRUE' d='M 6 3.2055 A 0.7945 0.7945 0 0 0 5.2055 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_TRUE' d='M 6 3.7945 A 0.2055 0.2055 0 0 0 5.7945 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_TRUE' d='M 5.7945 5 A 0.7945 0.7945 0 0 0 5 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_TRUE' d='M 5.2055 5 A 0.2055 0.2055 0 0 0 5 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_FALSE' d='M 6 5.2055 A 0.7945 0.7945 0 0 0 5.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_FALSE' d='M 6 5.7945 A 0.2055 0.2055 0 0 0 5.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-TRUE_FALSE' d='M 6 6.2055 A 0.7945 0.7945 0 0 0 5.2055 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-TRUE_FALSE' d='M 6 6.7945 A 0.2055 0.2055 0 0 0 5.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top-TRUE' d='M 5.2055 7 L 5.2055 7.494 A 0.2945 0.2945 0 0 0 5.7945 7.494 L 5.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_FALSE' d='M 6 0.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 0.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_FALSE' d='M 6 0.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 0.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_TRUE' d='M 6.7945 2 A 0.7945 0.7945 0 0 0 6 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-TRUE_TRUE' d='M 6.2055 2 A 0.2055 0.2055 0 0 0 6 1.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_FALSE' d='M 6.2055 2 A 0.7945 0.7945 0 0 0 7 2.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_right-TRUE_FALSE' d='M 6.7945 2 A 0.2055 0.2055 0 0 0 7 2.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_TRUE' d='M 6.7945 4 A 0.7945 0.7945 0 0 0 6 3.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_TRUE' d='M 6.2055 4 A 0.2055 0.2055 0 0 0 6 3.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_FALSE' d='M 6.7945 5 A 0.7945 0.7945 0 0 0 6 4.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_left-FALSE_FALSE' d='M 6.2055 5 A 0.2055 0.2055 0 0 0 6 4.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_TRUE' d='M 7 5.2055 A 0.7945 0.7945 0 0 0 6.2055 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_TRUE' d='M 7 5.7945 A 0.2055 0.2055 0 0 0 6.7945 6' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_FALSE' d='M 7 6.2055 A 0.7945 0.7945 0 0 0 6.2055 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-bottom_right-FALSE_FALSE' d='M 7 6.7945 A 0.2055 0.2055 0 0 0 6.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_FALSE' d='M 6 7.7945 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 7.7945' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left_right-FALSE_FALSE' d='M 6 7.2055 l 0.5 0 l 0.01 0.01 l -0.01 -0.01 L 7 7.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left-FALSE' d='M 7 1.7945 L 7.494 1.7945 A 0.2945 0.2945 0 0 0 7.494 1.2055 L 7 1.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_TRUE' d='M 7.7945 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.7945 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_TRUE' d='M 7.2055 2 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.2055 3' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-TRUE_TRUE' d='M 7.7945 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.7945 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-TRUE_TRUE' d='M 7.2055 3 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.2055 4' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-TRUE_FALSE' d='M 7.7945 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.7945 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-TRUE_FALSE' d='M 7.2055 4 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.2055 5' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-left-TRUE' d='M 7 5.7945 L 7.494 5.7945 A 0.2945 0.2945 0 0 0 7.494 5.2055 L 7 5.2055' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_FALSE' d='M 7.7945 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.7945 7' transform='rotate(0)' transform-origin='4 4'/>
+<path class='line line-high-top_bottom-FALSE_FALSE' d='M 7.2055 6 l 0 0.5 l 0.01 0.01 l -0.01 -0.01 L 7.2055 7' transform='rotate(0)' transform-origin='4 4'/>
+<linearGradient id='line-low-top_bottom-TRUE_TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-top_bottom-TRUE_TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top_left-TRUE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-top_left-TRUE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-high-bottom_left-TRUE_TRUE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-top_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-bottom_right-TRUE_TRUE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-low-left_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-left_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-high-top_bottom-FALSE_TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top_left-FALSE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-top_left-FALSE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-bottom_left-FALSE_TRUE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-bottom_left-FALSE_TRUE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top_right-FALSE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-top_right-FALSE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-bottom_right-FALSE_TRUE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-bottom_right-FALSE_TRUE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-high-left_right-FALSE_TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top-FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-low-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#003554' /><stop offset='100%' stop-color='#003554' /></linearGradient>
+<linearGradient id='line-high-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#6C91C2' /><stop offset='100%' stop-color='#6C91C2' /></linearGradient>
+<linearGradient id='line-low-top_bottom-TRUE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top_bottom-TRUE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top_left-TRUE_FALSE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-bottom_left-TRUE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-bottom_left-TRUE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-top_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-bottom_right-TRUE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-bottom_right-TRUE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-left_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-left_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#003554' /><stop offset='10%' stop-color='#003554' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#6C91C2' /><stop offset='10%' stop-color='#6C91C2' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-top_bottom-FALSE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top_bottom-FALSE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-top_left-FALSE_FALSE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top_left-FALSE_FALSE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-bottom_left-FALSE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-bottom_left-FALSE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-top_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-top_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-bottom_right-FALSE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-bottom_right-FALSE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-left_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-left_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-top-FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-low-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#003554' /><stop offset='60%' stop-color='#003554' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='line-high-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#36638B' /><stop offset='10%' stop-color='#36638B' /><stop offset='40%' stop-color='#6C91C2' /><stop offset='60%' stop-color='#6C91C2' /><stop offset='90%' stop-color='#36638B' /><stop offset='100%' stop-color='#36638B' /></linearGradient>
+<linearGradient id='edging-low-top_bottom-TRUE_TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-top_bottom-TRUE_TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top_left-TRUE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-top_left-TRUE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-high-bottom_left-TRUE_TRUE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-top_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-bottom_right-TRUE_TRUE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-low-left_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-left_right-TRUE_TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-high-top_bottom-FALSE_TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top_left-FALSE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-top_left-FALSE_TRUE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-bottom_left-FALSE_TRUE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-bottom_left-FALSE_TRUE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top_right-FALSE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-top_right-FALSE_TRUE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-bottom_right-FALSE_TRUE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-bottom_right-FALSE_TRUE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-high-left_right-FALSE_TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top-FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-low-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#566246' /><stop offset='100%' stop-color='#566246' /></linearGradient>
+<linearGradient id='edging-high-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#3BCEAC' /><stop offset='100%' stop-color='#3BCEAC' /></linearGradient>
+<linearGradient id='edging-low-top_bottom-TRUE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top_bottom-TRUE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top_left-TRUE_FALSE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-bottom_left-TRUE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-bottom_left-TRUE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-top_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-bottom_right-TRUE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-bottom_right-TRUE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-left_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-left_right-TRUE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top-TRUE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-bottom-TRUE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-left-TRUE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#566246' /><stop offset='10%' stop-color='#566246' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-right-TRUE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#3BCEAC' /><stop offset='10%' stop-color='#3BCEAC' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-top_bottom-FALSE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top_bottom-FALSE_FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-top_left-FALSE_FALSE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top_left-FALSE_FALSE' x1='1' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-bottom_left-FALSE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-bottom_left-FALSE_FALSE' x1='1' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-top_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-top_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-bottom_right-FALSE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-bottom_right-FALSE_FALSE' x1='0' x2='1' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-left_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-left_right-FALSE_FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-top-FALSE' x1='0' x2='0' y1='0' y2='1'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-bottom-FALSE' x1='0' x2='0' y1='1' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-left-FALSE' x1='0' x2='1' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-low-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#566246' /><stop offset='60%' stop-color='#566246' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<linearGradient id='edging-high-right-FALSE' x1='1' x2='0' y1='0' y2='0'><stop offset='0%' stop-color='#489879' /><stop offset='10%' stop-color='#489879' /><stop offset='40%' stop-color='#3BCEAC' /><stop offset='60%' stop-color='#3BCEAC' /><stop offset='90%' stop-color='#489879' /><stop offset='100%' stop-color='#489879' /></linearGradient>
+<style>
+ .edging {stroke-width:0.0798;stroke-linecap:'butt';fill:none;transform:'rotate(0)';}
+        .line {stroke-width:0.171;stroke-linecap:'butt';fill:none;transform:'rotate(0)';}
+        .line-cap {stroke-width:0.0855;stroke-linecap:'butt';fill:none;transform:'rotate(0)';} 
+ .line-low-top_bottom-TRUE_TRUE {stroke:url(#line-low-top_bottom-TRUE_TRUE);}
+        .line-high-top_bottom-TRUE_TRUE {stroke:url(#line-high-top_bottom-TRUE_TRUE);}
+        .line-low-top_left-TRUE_TRUE {stroke:url(#line-low-top_left-TRUE_TRUE);}
+        .line-high-top_left-TRUE_TRUE {stroke:url(#line-high-top_left-TRUE_TRUE);}
+        .line-high-bottom_left-TRUE_TRUE {stroke:url(#line-high-bottom_left-TRUE_TRUE);}
+        .line-low-top_right-TRUE_TRUE {stroke:url(#line-low-top_right-TRUE_TRUE);}
+        .line-high-top_right-TRUE_TRUE {stroke:url(#line-high-top_right-TRUE_TRUE);}
+        .line-low-bottom_right-TRUE_TRUE {stroke:url(#line-low-bottom_right-TRUE_TRUE);}
+        .line-low-left_right-TRUE_TRUE {stroke:url(#line-low-left_right-TRUE_TRUE);}
+        .line-high-left_right-TRUE_TRUE {stroke:url(#line-high-left_right-TRUE_TRUE);}
+        .line-low-top-TRUE {stroke:url(#line-low-top-TRUE);}
+        .line-high-top-TRUE {stroke:url(#line-high-top-TRUE);}
+        .line-low-bottom-TRUE {stroke:url(#line-low-bottom-TRUE);}
+        .line-high-bottom-TRUE {stroke:url(#line-high-bottom-TRUE);}
+        .line-low-left-TRUE {stroke:url(#line-low-left-TRUE);}
+        .line-high-left-TRUE {stroke:url(#line-high-left-TRUE);}
+        .line-low-right-TRUE {stroke:url(#line-low-right-TRUE);}
+        .line-high-right-TRUE {stroke:url(#line-high-right-TRUE);}
+        .line-high-top_bottom-FALSE_TRUE {stroke:url(#line-high-top_bottom-FALSE_TRUE);}
+        .line-low-top_left-FALSE_TRUE {stroke:url(#line-low-top_left-FALSE_TRUE);}
+        .line-high-top_left-FALSE_TRUE {stroke:url(#line-high-top_left-FALSE_TRUE);}
+        .line-low-bottom_left-FALSE_TRUE {stroke:url(#line-low-bottom_left-FALSE_TRUE);}
+        .line-high-bottom_left-FALSE_TRUE {stroke:url(#line-high-bottom_left-FALSE_TRUE);}
+        .line-low-top_right-FALSE_TRUE {stroke:url(#line-low-top_right-FALSE_TRUE);}
+        .line-high-top_right-FALSE_TRUE {stroke:url(#line-high-top_right-FALSE_TRUE);}
+        .line-low-bottom_right-FALSE_TRUE {stroke:url(#line-low-bottom_right-FALSE_TRUE);}
+        .line-high-bottom_right-FALSE_TRUE {stroke:url(#line-high-bottom_right-FALSE_TRUE);}
+        .line-high-left_right-FALSE_TRUE {stroke:url(#line-high-left_right-FALSE_TRUE);}
+        .line-low-top-FALSE {stroke:url(#line-low-top-FALSE);}
+        .line-low-bottom-FALSE {stroke:url(#line-low-bottom-FALSE);}
+        .line-high-bottom-FALSE {stroke:url(#line-high-bottom-FALSE);}
+        .line-low-left-FALSE {stroke:url(#line-low-left-FALSE);}
+        .line-high-left-FALSE {stroke:url(#line-high-left-FALSE);}
+        .line-low-right-FALSE {stroke:url(#line-low-right-FALSE);}
+        .line-high-right-FALSE {stroke:url(#line-high-right-FALSE);}
+        .line-low-top_bottom-TRUE_FALSE {stroke:url(#line-low-top_bottom-TRUE_FALSE);}
+        .line-high-top_bottom-TRUE_FALSE {stroke:url(#line-high-top_bottom-TRUE_FALSE);}
+        .line-high-top_left-TRUE_FALSE {stroke:url(#line-high-top_left-TRUE_FALSE);}
+        .line-low-bottom_left-TRUE_FALSE {stroke:url(#line-low-bottom_left-TRUE_FALSE);}
+        .line-high-bottom_left-TRUE_FALSE {stroke:url(#line-high-bottom_left-TRUE_FALSE);}
+        .line-low-top_right-TRUE_FALSE {stroke:url(#line-low-top_right-TRUE_FALSE);}
+        .line-high-top_right-TRUE_FALSE {stroke:url(#line-high-top_right-TRUE_FALSE);}
+        .line-low-bottom_right-TRUE_FALSE {stroke:url(#line-low-bottom_right-TRUE_FALSE);}
+        .line-high-bottom_right-TRUE_FALSE {stroke:url(#line-high-bottom_right-TRUE_FALSE);}
+        .line-low-left_right-TRUE_FALSE {stroke:url(#line-low-left_right-TRUE_FALSE);}
+        .line-high-left_right-TRUE_FALSE {stroke:url(#line-high-left_right-TRUE_FALSE);}
+        .line-low-top-TRUE {stroke:url(#line-low-top-TRUE);}
+        .line-high-top-TRUE {stroke:url(#line-high-top-TRUE);}
+        .line-low-bottom-TRUE {stroke:url(#line-low-bottom-TRUE);}
+        .line-high-bottom-TRUE {stroke:url(#line-high-bottom-TRUE);}
+        .line-low-left-TRUE {stroke:url(#line-low-left-TRUE);}
+        .line-high-left-TRUE {stroke:url(#line-high-left-TRUE);}
+        .line-low-right-TRUE {stroke:url(#line-low-right-TRUE);}
+        .line-high-right-TRUE {stroke:url(#line-high-right-TRUE);}
+        .line-low-top_bottom-FALSE_FALSE {stroke:url(#line-low-top_bottom-FALSE_FALSE);}
+        .line-high-top_bottom-FALSE_FALSE {stroke:url(#line-high-top_bottom-FALSE_FALSE);}
+        .line-low-top_left-FALSE_FALSE {stroke:url(#line-low-top_left-FALSE_FALSE);}
+        .line-high-top_left-FALSE_FALSE {stroke:url(#line-high-top_left-FALSE_FALSE);}
+        .line-low-bottom_left-FALSE_FALSE {stroke:url(#line-low-bottom_left-FALSE_FALSE);}
+        .line-high-bottom_left-FALSE_FALSE {stroke:url(#line-high-bottom_left-FALSE_FALSE);}
+        .line-low-top_right-FALSE_FALSE {stroke:url(#line-low-top_right-FALSE_FALSE);}
+        .line-high-top_right-FALSE_FALSE {stroke:url(#line-high-top_right-FALSE_FALSE);}
+        .line-low-bottom_right-FALSE_FALSE {stroke:url(#line-low-bottom_right-FALSE_FALSE);}
+        .line-high-bottom_right-FALSE_FALSE {stroke:url(#line-high-bottom_right-FALSE_FALSE);}
+        .line-low-left_right-FALSE_FALSE {stroke:url(#line-low-left_right-FALSE_FALSE);}
+        .line-high-left_right-FALSE_FALSE {stroke:url(#line-high-left_right-FALSE_FALSE);}
+        .line-low-top-FALSE {stroke:url(#line-low-top-FALSE);}
+        .line-low-bottom-FALSE {stroke:url(#line-low-bottom-FALSE);}
+        .line-high-bottom-FALSE {stroke:url(#line-high-bottom-FALSE);}
+        .line-low-left-FALSE {stroke:url(#line-low-left-FALSE);}
+        .line-high-left-FALSE {stroke:url(#line-high-left-FALSE);}
+        .line-low-right-FALSE {stroke:url(#line-low-right-FALSE);}
+        .line-high-right-FALSE {stroke:url(#line-high-right-FALSE);}
+        .edging-low-top_bottom-TRUE_TRUE {stroke:url(#edging-low-top_bottom-TRUE_TRUE);}
+        .edging-high-top_bottom-TRUE_TRUE {stroke:url(#edging-high-top_bottom-TRUE_TRUE);}
+        .edging-low-top_left-TRUE_TRUE {stroke:url(#edging-low-top_left-TRUE_TRUE);}
+        .edging-high-top_left-TRUE_TRUE {stroke:url(#edging-high-top_left-TRUE_TRUE);}
+        .edging-high-bottom_left-TRUE_TRUE {stroke:url(#edging-high-bottom_left-TRUE_TRUE);}
+        .edging-low-top_right-TRUE_TRUE {stroke:url(#edging-low-top_right-TRUE_TRUE);}
+        .edging-high-top_right-TRUE_TRUE {stroke:url(#edging-high-top_right-TRUE_TRUE);}
+        .edging-low-bottom_right-TRUE_TRUE {stroke:url(#edging-low-bottom_right-TRUE_TRUE);}
+        .edging-low-left_right-TRUE_TRUE {stroke:url(#edging-low-left_right-TRUE_TRUE);}
+        .edging-high-left_right-TRUE_TRUE {stroke:url(#edging-high-left_right-TRUE_TRUE);}
+        .edging-low-top-TRUE {stroke:url(#edging-low-top-TRUE);}
+        .edging-high-top-TRUE {stroke:url(#edging-high-top-TRUE);}
+        .edging-low-bottom-TRUE {stroke:url(#edging-low-bottom-TRUE);}
+        .edging-high-bottom-TRUE {stroke:url(#edging-high-bottom-TRUE);}
+        .edging-low-left-TRUE {stroke:url(#edging-low-left-TRUE);}
+        .edging-high-left-TRUE {stroke:url(#edging-high-left-TRUE);}
+        .edging-low-right-TRUE {stroke:url(#edging-low-right-TRUE);}
+        .edging-high-right-TRUE {stroke:url(#edging-high-right-TRUE);}
+        .edging-high-top_bottom-FALSE_TRUE {stroke:url(#edging-high-top_bottom-FALSE_TRUE);}
+        .edging-low-top_left-FALSE_TRUE {stroke:url(#edging-low-top_left-FALSE_TRUE);}
+        .edging-high-top_left-FALSE_TRUE {stroke:url(#edging-high-top_left-FALSE_TRUE);}
+        .edging-low-bottom_left-FALSE_TRUE {stroke:url(#edging-low-bottom_left-FALSE_TRUE);}
+        .edging-high-bottom_left-FALSE_TRUE {stroke:url(#edging-high-bottom_left-FALSE_TRUE);}
+        .edging-low-top_right-FALSE_TRUE {stroke:url(#edging-low-top_right-FALSE_TRUE);}
+        .edging-high-top_right-FALSE_TRUE {stroke:url(#edging-high-top_right-FALSE_TRUE);}
+        .edging-low-bottom_right-FALSE_TRUE {stroke:url(#edging-low-bottom_right-FALSE_TRUE);}
+        .edging-high-bottom_right-FALSE_TRUE {stroke:url(#edging-high-bottom_right-FALSE_TRUE);}
+        .edging-high-left_right-FALSE_TRUE {stroke:url(#edging-high-left_right-FALSE_TRUE);}
+        .edging-low-top-FALSE {stroke:url(#edging-low-top-FALSE);}
+        .edging-low-bottom-FALSE {stroke:url(#edging-low-bottom-FALSE);}
+        .edging-high-bottom-FALSE {stroke:url(#edging-high-bottom-FALSE);}
+        .edging-low-left-FALSE {stroke:url(#edging-low-left-FALSE);}
+        .edging-high-left-FALSE {stroke:url(#edging-high-left-FALSE);}
+        .edging-low-right-FALSE {stroke:url(#edging-low-right-FALSE);}
+        .edging-high-right-FALSE {stroke:url(#edging-high-right-FALSE);}
+        .edging-low-top_bottom-TRUE_FALSE {stroke:url(#edging-low-top_bottom-TRUE_FALSE);}
+        .edging-high-top_bottom-TRUE_FALSE {stroke:url(#edging-high-top_bottom-TRUE_FALSE);}
+        .edging-high-top_left-TRUE_FALSE {stroke:url(#edging-high-top_left-TRUE_FALSE);}
+        .edging-low-bottom_left-TRUE_FALSE {stroke:url(#edging-low-bottom_left-TRUE_FALSE);}
+        .edging-high-bottom_left-TRUE_FALSE {stroke:url(#edging-high-bottom_left-TRUE_FALSE);}
+        .edging-low-top_right-TRUE_FALSE {stroke:url(#edging-low-top_right-TRUE_FALSE);}
+        .edging-high-top_right-TRUE_FALSE {stroke:url(#edging-high-top_right-TRUE_FALSE);}
+        .edging-low-bottom_right-TRUE_FALSE {stroke:url(#edging-low-bottom_right-TRUE_FALSE);}
+        .edging-high-bottom_right-TRUE_FALSE {stroke:url(#edging-high-bottom_right-TRUE_FALSE);}
+        .edging-low-left_right-TRUE_FALSE {stroke:url(#edging-low-left_right-TRUE_FALSE);}
+        .edging-high-left_right-TRUE_FALSE {stroke:url(#edging-high-left_right-TRUE_FALSE);}
+        .edging-low-top-TRUE {stroke:url(#edging-low-top-TRUE);}
+        .edging-high-top-TRUE {stroke:url(#edging-high-top-TRUE);}
+        .edging-low-bottom-TRUE {stroke:url(#edging-low-bottom-TRUE);}
+        .edging-high-bottom-TRUE {stroke:url(#edging-high-bottom-TRUE);}
+        .edging-low-left-TRUE {stroke:url(#edging-low-left-TRUE);}
+        .edging-high-left-TRUE {stroke:url(#edging-high-left-TRUE);}
+        .edging-low-right-TRUE {stroke:url(#edging-low-right-TRUE);}
+        .edging-high-right-TRUE {stroke:url(#edging-high-right-TRUE);}
+        .edging-low-top_bottom-FALSE_FALSE {stroke:url(#edging-low-top_bottom-FALSE_FALSE);}
+        .edging-high-top_bottom-FALSE_FALSE {stroke:url(#edging-high-top_bottom-FALSE_FALSE);}
+        .edging-low-top_left-FALSE_FALSE {stroke:url(#edging-low-top_left-FALSE_FALSE);}
+        .edging-high-top_left-FALSE_FALSE {stroke:url(#edging-high-top_left-FALSE_FALSE);}
+        .edging-low-bottom_left-FALSE_FALSE {stroke:url(#edging-low-bottom_left-FALSE_FALSE);}
+        .edging-high-bottom_left-FALSE_FALSE {stroke:url(#edging-high-bottom_left-FALSE_FALSE);}
+        .edging-low-top_right-FALSE_FALSE {stroke:url(#edging-low-top_right-FALSE_FALSE);}
+        .edging-high-top_right-FALSE_FALSE {stroke:url(#edging-high-top_right-FALSE_FALSE);}
+        .edging-low-bottom_right-FALSE_FALSE {stroke:url(#edging-low-bottom_right-FALSE_FALSE);}
+        .edging-high-bottom_right-FALSE_FALSE {stroke:url(#edging-high-bottom_right-FALSE_FALSE);}
+        .edging-low-left_right-FALSE_FALSE {stroke:url(#edging-low-left_right-FALSE_FALSE);}
+        .edging-high-left_right-FALSE_FALSE {stroke:url(#edging-high-left_right-FALSE_FALSE);}
+        .edging-low-top-FALSE {stroke:url(#edging-low-top-FALSE);}
+        .edging-low-bottom-FALSE {stroke:url(#edging-low-bottom-FALSE);}
+        .edging-high-bottom-FALSE {stroke:url(#edging-high-bottom-FALSE);}
+        .edging-low-left-FALSE {stroke:url(#edging-low-left-FALSE);}
+        .edging-high-left-FALSE {stroke:url(#edging-high-left-FALSE);}
+        .edging-low-right-FALSE {stroke:url(#edging-low-right-FALSE);}
+        .edging-high-right-FALSE {stroke:url(#edging-high-right-FALSE);} 
+</style>
+</svg>
