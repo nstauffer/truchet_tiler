@@ -802,7 +802,7 @@ server <- function(input, output) {
                                                      
                                                      # Prevent straights from being chosen if possible
                                                      if (!allow_straights) {
-                                                       while(has_straights) {
+                                                       while (has_straights & length(available_connections) > 2) {
                                                          pair <- sample(x = available_connections,
                                                                         size = 2,
                                                                         replace = FALSE)
