@@ -244,11 +244,11 @@ server <- function(input, output) {
                                  #                                     .default = previous_edgings),
                                  previous_lines = cumsum(as.numeric(type == "line")),
                                  previous_lines = dplyr::case_when(type == "line" ~ previous_lines - 0.5,
-                                                                   type == "edging" ~ previous_lines))#,
-                 # previous_lines = dplyr::case_when(type == "line" & previous_lines == 0 ~ 0.5,
-                 #                                     .default = previous_lines),
-                 # displacement = dplyr::case_when(is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + margin,
-                 #                                 !is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + margin - line_width / 4))
+                                                                   type == "edging" ~ previous_lines),
+                                 # previous_lines = dplyr::case_when(type == "line" & previous_lines == 0 ~ 0.5,
+                                 #                                     .default = previous_lines),
+                                 displacement = dplyr::case_when(is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + input$margin,
+                                                                 !is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + input$margin - line_width / 4))
                  
                  cap_radii_df$previous_edging_pairs <- sapply(X = seq_len(nrow(cap_radii_df)),
                                                               cap_radii_df = cap_radii_df,
@@ -271,7 +271,7 @@ server <- function(input, output) {
                                                previous_edgings = previous_edgings - 0.5 * previous_edging_pairs_count,
                                                displacement = dplyr::case_when(is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + input$margin,
                                                                                !is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + input$margin - line_width / 4))
-                
+                 
                  
                  base_lines <- list(line = list(top = dplyr::filter(.data = cap_radii_df,
                                                                     type == "line") |>
