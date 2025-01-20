@@ -99,7 +99,8 @@ ui <- fluidPage(
     # Show a plot of the generated distribution
     mainPanel(
       htmlOutput(outputId = "svg_embed",
-                 inline = TRUE)
+                 inline = TRUE),
+      uiOutput(outputId = "matrix")
     )
   )
 )
@@ -109,13 +110,45 @@ server <- function(input, output) {
   
   output$svg_embed <- renderUI(expr = HTML(paste0("<img src = 'example.svg' height = '100%'>")))
   
+  output$matrix <- renderUI({
+    fluidRow(lapply(X = seq_len(input$n_cols),
+           n_rows = input$n_rows,
+           function(X, n_rows) {
+             column(width = 1,
+                    checkboxGroupInput(inputId = paste0("col_", X),
+                                label = NULL,
+                                inline = FALSE,
+                                selected = seq_len(n_rows),
+                                choiceNames = rep("",
+                                                  times = n_rows),
+                                choiceValues = seq_len(n_rows)))
+    }))
+  })
+  
   workspace <- reactiveValues(temp_dir = "www",
                               current_output = NULL,
                               buffer = FALSE,
                               respect_margins = TRUE,
+                              base_matrix = matrix(data = rep(1,
+                                                              times = 7 * 7),
+                                                   nrow = 7),
                               rotation = 0,
                               colors = NULL,
                               svg = NULL)
+  
+  observeEvent(eventExpr = workspace$base_matrix,
+               handlerExpr = {
+                 for (current_base_matrix_col in seq_len(ncol(workspace$base_matrix))) {
+                   updateCheckboxGroupInput(inputId = paste0("col_", current_base_matrix_col),
+                                            selected = which(workspace$base_matrix[,current_base_matrix_col] == 1))
+                 }
+               })
+  
+  observeEvent(eventExpr = input$col_1,
+               handlerExpr = {
+                 message(paste(input$col_1,
+                               collapse = " "))
+               })
   
   observeEvent(eventExpr = input$cleanup_button,
                handlerExpr = {
@@ -132,6 +165,7 @@ server <- function(input, output) {
                                           edging = c(high = paste0(input$color_edging_high),
                                                      low = paste0(input$color_edging_low)),
                                           background = paste0(input$color_background))
+                 
                  
                  ##### Making the lines ----------------------------------------------------------
                  ###### Radii and thickness -----------------------------------------------------
@@ -540,9 +574,22 @@ server <- function(input, output) {
                  # This is a stub for eventually implementing intertwining palettes
                  id_value <- 1
                  
-                 base_vector <- rep(x = 1,
-                                    times = input$n_rows * input$n_cols)
-                 base_vector[trunc(input$n_rows / 2 + (input$n_rows * input$n_cols / 2))] <- id_value
+                 base_vector <- lapply(X = paste0("col_", seq_len(input$n_cols)),
+                                       n_rows = input$n_rows,
+                                       FUN = function(X, n_rows){
+                                         output <- rep(FALSE,
+                                             times = n_rows)
+                                         output[as.numeric(input[[X]])] <- TRUE
+                                         output
+                                       }) |>
+                   unlist()
+                 
+                 message(paste(base_vector,
+                               collapse = " "))
+                 
+                 # base_vector <- rep(x = 1,
+                 #                    times = input$n_rows * input$n_cols)
+                 # base_vector[trunc(input$n_rows / 2 + (input$n_rows * input$n_cols / 2))] <- id_value
                  
                  if (workspace$buffer) {
                    buffer_indices <- c(seq_len(input$n_rows),
@@ -643,6 +690,7 @@ server <- function(input, output) {
                  
                  base_matrix <- matrix(data = base_vector,
                                        nrow = input$n_rows)
+                 workspace$base_matrix <- base_matrix
                  ##### Adjacency ------------------------------------------------------
                  # Figure out which cells are part of the blob that we'll be tiling.
                  # id_value <- 1
