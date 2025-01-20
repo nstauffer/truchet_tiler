@@ -7,7 +7,7 @@ library(tidyverse)
 ui <- fluidPage(
   
   # Application title
-  titlePanel("Truchet Tiler v0.5"),
+  titlePanel("Truchet Tiler v0.5.5"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
@@ -100,6 +100,7 @@ ui <- fluidPage(
     mainPanel(
       htmlOutput(outputId = "svg_embed",
                  inline = TRUE),
+      helpText("Use checkboxes below to adjust which tiles will be populated in the array when generating."),
       uiOutput(outputId = "matrix")
     )
   )
