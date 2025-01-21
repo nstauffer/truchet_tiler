@@ -112,18 +112,17 @@ server <- function(input, output) {
   output$svg_embed <- renderUI(expr = HTML(paste0("<img src = 'example.svg' height = '100%'>")))
   
   output$matrix <- renderUI({
-    fluidRow(lapply(X = seq_len(input$n_cols),
-           n_rows = input$n_rows,
-           function(X, n_rows) {
-             column(width = 1,
-                    checkboxGroupInput(inputId = paste0("col_", X),
+    lapply(X = seq_len(input$n_rows),
+           n_cols = input$n_cols,
+           function(X, n_cols) {
+             checkboxGroupInput(inputId = paste0("row_", X),
                                 label = NULL,
-                                inline = FALSE,
-                                selected = seq_len(n_rows),
+                                inline = TRUE,
+                                selected = seq_len(n_cols),
                                 choiceNames = rep("",
-                                                  times = n_rows),
-                                choiceValues = seq_len(n_rows)))
-    }))
+                                                  times = n_cols),
+                                choiceValues = seq_len(n_cols))
+           })
   })
   
   workspace <- reactiveValues(temp_dir = "www",
@@ -139,17 +138,17 @@ server <- function(input, output) {
   
   observeEvent(eventExpr = workspace$base_matrix,
                handlerExpr = {
-                 for (current_base_matrix_col in seq_len(ncol(workspace$base_matrix))) {
-                   updateCheckboxGroupInput(inputId = paste0("col_", current_base_matrix_col),
-                                            selected = which(workspace$base_matrix[,current_base_matrix_col] == 1))
+                 for (current_base_matrix_row in seq_len(nrow(workspace$base_matrix))) {
+                   updateCheckboxGroupInput(inputId = paste0("row_", current_base_matrix_row),
+                                            selected = which(workspace$base_matrix[current_base_matrix_row,] == 1))
                  }
                })
   
-  observeEvent(eventExpr = input$col_1,
-               handlerExpr = {
-                 message(paste(input$col_1,
-                               collapse = " "))
-               })
+  # observeEvent(eventExpr = input$col_1,
+  #              handlerExpr = {
+  #                message(paste(input$col_1,
+  #                              collapse = " "))
+  #              })
   
   observeEvent(eventExpr = input$cleanup_button,
                handlerExpr = {
@@ -575,11 +574,11 @@ server <- function(input, output) {
                  # This is a stub for eventually implementing intertwining palettes
                  id_value <- 1
                  
-                 base_vector <- lapply(X = paste0("col_", seq_len(input$n_cols)),
-                                       n_rows = input$n_rows,
-                                       FUN = function(X, n_rows){
+                 base_vector <- lapply(X = paste0("row_", seq_len(input$n_rows)),
+                                       n_cols = input$n_cols,
+                                       FUN = function(X, n_cols){
                                          output <- rep(FALSE,
-                                             times = n_rows)
+                                                       times = n_cols)
                                          output[as.numeric(input[[X]])] <- TRUE
                                          output
                                        }) |>
