@@ -2,12 +2,47 @@
 library(shiny)
 library(colourpicker)
 library(tidyverse)
+source("support_functions.R")
 
+# For testing
+# input <- list(n_cols = 5,
+#               n_rows = 5,
+#               n_lines = 3,
+#               min_radius = 0.15,
+#               proportion_lines = 0.65,
+#               proportion_edges = 0.35,
+#               arc_vertex_count = 2,
+#               color_line_high = "#483D8B",
+#               color_line_low = "#3DDBD9",
+#               color_edging_high = "#FFB000",
+#               color_edging_low = "#DC267F",
+#               color_background = "#36013F",
+#               allow_straights = FALSE,
+#               margin = 0.15,
+#               tile_pixels = 100,
+#               row_1 = seq_len(5),
+#               row_2 = seq_len(5),
+#               row_3 = seq_len(5),
+#               row_4 = seq_len(5),
+#               row_5 = seq_len(5))
+# workspace <- list(temp_dir = "www",
+#                   current_output = NULL,
+#                   buffer = FALSE,
+#                   respect_margins = TRUE,
+#                   base_matrix = matrix(data = rep(1,
+#                                                   times = input$n_cols * input$n_rows),
+#                                        nrow = input$n_rows),
+#                   rotation = 0,
+#                   colors = NULL,
+#                   svg = NULL)
+
+# UI ###########################################################################
 # Define UI for application that draws a histogram
+
 ui <- fluidPage(
   
   # Application title
-  titlePanel("Truchet Tiler v0.5.5"),
+  titlePanel("Truchet Tiler v0.7.0"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
@@ -36,8 +71,8 @@ ui <- fluidPage(
         column(width = 6,
                numericInput(inputId = "min_radius",
                             label  = "Inner curve radius:",
-                            min = 0.01,
-                            max = 0.49,
+                            min = 0.1,
+                            max = 0.4,
                             value = 0.15))
       ),
       fluidRow(
@@ -53,6 +88,21 @@ ui <- fluidPage(
                             min = 0,
                             max = 1,
                             value = 0.35))
+      ),
+      fluidRow(
+        column(width = 6,
+               numericInput(inputId = "arc_vertex_count",
+                            label  = "Number of vertices (0 produces a smooth arc):",
+                            min = 0,
+                            max = 4,
+                            value = 0,
+                            step = 1))#,
+        # column(width = 6,
+        #        numericInput(inputId = "proportion_edges",
+        #                     label  = "Proportion of band occupied by edging:",
+        #                     min = 0,
+        #                     max = 1,
+        #                     value = 0.35))
       ),
       fluidRow(
         column(width = 6,
@@ -106,7 +156,7 @@ ui <- fluidPage(
   )
 )
 
-# Define server logic required to draw a histogram
+# SERVER #######################################################################
 server <- function(input, output) {
   
   output$svg_embed <- renderUI(expr = HTML(paste0("<img src = 'example.svg' height = '100%'>")))
@@ -144,11 +194,11 @@ server <- function(input, output) {
                  }
                })
   
-  # observeEvent(eventExpr = input$col_1,
-  #              handlerExpr = {
-  #                message(paste(input$col_1,
-  #                              collapse = " "))
-  #              })
+  observeEvent(eventExpr = input$row_1,
+               handlerExpr = {
+                 message(paste(input$row_1,
+                               collapse = " "))
+               })
   
   observeEvent(eventExpr = input$cleanup_button,
                handlerExpr = {
@@ -306,139 +356,10 @@ server <- function(input, output) {
                                                displacement = dplyr::case_when(is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + input$margin,
                                                                                !is.na(special_type) ~ previous_edgings * edging_width + previous_lines * line_width + radius + input$margin - line_width / 4))
                  
-                 
-                 base_lines <- list(line = list(top = dplyr::filter(.data = cap_radii_df,
-                                                                    type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 0.5 - radius,
-                                                                y_start = 1 - displacement,
-                                                                x_end = 0.5 + radius,
-                                                                y_end = 1 - displacement,
-                                                                x_origin = 0.5 - radius,
-                                                                y_origin = 0,
-                                                                x_terminus = 0.5 + radius,
-                                                                y_terminus = 0,
-                                                                radius_x = radius,
-                                                                radius_y = radius),
-                                                bottom = dplyr::filter(.data = cap_radii_df,
-                                                                       type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 0.5 + radius,
-                                                                y_start = displacement,
-                                                                x_end = 0.5 - radius,
-                                                                y_end = displacement,
-                                                                x_origin = 0.5 + radius,
-                                                                y_origin = 1,
-                                                                x_terminus = 0.5 - radius,
-                                                                y_terminus = 1,
-                                                                radius_x = radius,
-                                                                radius_y = radius),
-                                                left = dplyr::filter(.data = cap_radii_df,
-                                                                     type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 1 - displacement,
-                                                                y_start = 0.5 + radius,
-                                                                x_end = 1 - displacement,
-                                                                y_end = 0.5 - radius,
-                                                                x_origin = 0,
-                                                                y_origin = 0.5 + radius,
-                                                                x_terminus = 0,
-                                                                y_terminus = 0.5 - radius,
-                                                                radius_x = radius,
-                                                                radius_y = radius),
-                                                right = dplyr::filter(.data = cap_radii_df,
+                 ###### Arcs ---------------------------------------------------
+                 if (input$arc_vertex_count == 0) {
+                   base_lines <- list(line = list(top = dplyr::filter(.data = cap_radii_df,
                                                                       type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = displacement,
-                                                                y_start = 0.5 - radius,
-                                                                x_end = displacement,
-                                                                y_end = 0.5 + radius,
-                                                                x_origin = 1,
-                                                                y_origin = 0.5 - radius,
-                                                                x_terminus = 1,
-                                                                y_terminus = 0.5 + radius,
-                                                                radius_x = radius,
-                                                                radius_y = radius),
-                                                top_left = dplyr::filter(.data = radii_df,
-                                                                         type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 0,
-                                                                y_start = corner_radius,
-                                                                x_end = corner_radius,
-                                                                y_end = 0,
-                                                                x_origin = NA,
-                                                                y_origin = NA,
-                                                                x_terminus = NA,
-                                                                y_terminus = NA,
-                                                                radius_x = corner_radius,
-                                                                radius_y = corner_radius),
-                                                bottom_left = dplyr::filter(.data = radii_df,
-                                                                            type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = corner_radius,
-                                                                y_start = 1,
-                                                                x_end = 0,
-                                                                y_end = 1 - corner_radius,
-                                                                x_origin = NA,
-                                                                y_origin = NA,
-                                                                x_terminus = NA,
-                                                                y_terminus = NA,
-                                                                radius_x = corner_radius,
-                                                                radius_y = corner_radius),
-                                                top_right = dplyr::filter(.data = radii_df,
-                                                                          type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 1- corner_radius,
-                                                                y_start = 0,
-                                                                x_end = 1,
-                                                                y_end = corner_radius,
-                                                                x_origin = NA,
-                                                                y_origin = NA,
-                                                                x_terminus = NA,
-                                                                y_terminus = NA,
-                                                                radius_x = corner_radius,
-                                                                radius_y = corner_radius),
-                                                bottom_right = dplyr::filter(.data = radii_df,
-                                                                             type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 1,
-                                                                y_start = 1 - corner_radius,
-                                                                x_end = 1 - corner_radius,
-                                                                y_end = 1,
-                                                                x_origin = NA,
-                                                                y_origin = NA,
-                                                                x_terminus = NA,
-                                                                y_terminus = NA,
-                                                                radius_x = corner_radius,
-                                                                radius_y = corner_radius),
-                                                top_bottom = dplyr::filter(.data = radii_df,
-                                                                           type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = corner_radius,
-                                                                y_start = 0,
-                                                                x_end = corner_radius,
-                                                                y_end = 1,
-                                                                x_origin = NA,
-                                                                y_origin = NA,
-                                                                x_terminus = NA,
-                                                                y_terminus = NA,
-                                                                radius_x = NA,
-                                                                radius_y = NA),
-                                                left_right = dplyr::filter(.data = radii_df,
-                                                                           type == "line") |>
-                                                  dplyr::mutate(.data = _,
-                                                                x_start = 0,
-                                                                y_start = corner_radius,
-                                                                x_end = 1,
-                                                                y_end = corner_radius,
-                                                                x_origin = NA,
-                                                                y_origin = NA,
-                                                                x_terminus = NA,
-                                                                y_terminus = NA,
-                                                                radius_x = NA,
-                                                                radius_y = NA)),
-                                    edging = list(top = dplyr::filter(.data = cap_radii_df,
-                                                                      type == "edging") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 0.5 - radius,
                                                                   y_start = 1 - displacement,
@@ -451,7 +372,7 @@ server <- function(input, output) {
                                                                   radius_x = radius,
                                                                   radius_y = radius),
                                                   bottom = dplyr::filter(.data = cap_radii_df,
-                                                                         type == "edging") |>
+                                                                         type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 0.5 + radius,
                                                                   y_start = displacement,
@@ -464,7 +385,7 @@ server <- function(input, output) {
                                                                   radius_x = radius,
                                                                   radius_y = radius),
                                                   left = dplyr::filter(.data = cap_radii_df,
-                                                                       type == "edging") |>
+                                                                       type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 1 - displacement,
                                                                   y_start = 0.5 + radius,
@@ -477,7 +398,7 @@ server <- function(input, output) {
                                                                   radius_x = radius,
                                                                   radius_y = radius),
                                                   right = dplyr::filter(.data = cap_radii_df,
-                                                                        type == "edging") |>
+                                                                        type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = displacement,
                                                                   y_start = 0.5 - radius,
@@ -490,7 +411,7 @@ server <- function(input, output) {
                                                                   radius_x = radius,
                                                                   radius_y = radius),
                                                   top_left = dplyr::filter(.data = radii_df,
-                                                                           type == "edging") |>
+                                                                           type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 0,
                                                                   y_start = corner_radius,
@@ -503,7 +424,7 @@ server <- function(input, output) {
                                                                   radius_x = corner_radius,
                                                                   radius_y = corner_radius),
                                                   bottom_left = dplyr::filter(.data = radii_df,
-                                                                              type == "edging") |>
+                                                                              type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = corner_radius,
                                                                   y_start = 1,
@@ -516,7 +437,7 @@ server <- function(input, output) {
                                                                   radius_x = corner_radius,
                                                                   radius_y = corner_radius),
                                                   top_right = dplyr::filter(.data = radii_df,
-                                                                            type == "edging") |>
+                                                                            type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 1- corner_radius,
                                                                   y_start = 0,
@@ -529,7 +450,7 @@ server <- function(input, output) {
                                                                   radius_x = corner_radius,
                                                                   radius_y = corner_radius),
                                                   bottom_right = dplyr::filter(.data = radii_df,
-                                                                               type == "edging") |>
+                                                                               type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 1,
                                                                   y_start = 1 - corner_radius,
@@ -542,7 +463,7 @@ server <- function(input, output) {
                                                                   radius_x = corner_radius,
                                                                   radius_y = corner_radius),
                                                   top_bottom = dplyr::filter(.data = radii_df,
-                                                                             type == "edging") |>
+                                                                             type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = corner_radius,
                                                                   y_start = 0,
@@ -555,7 +476,7 @@ server <- function(input, output) {
                                                                   radius_x = NA,
                                                                   radius_y = NA),
                                                   left_right = dplyr::filter(.data = radii_df,
-                                                                             type == "edging") |>
+                                                                             type == "line") |>
                                                     dplyr::mutate(.data = _,
                                                                   x_start = 0,
                                                                   y_start = corner_radius,
@@ -566,7 +487,777 @@ server <- function(input, output) {
                                                                   x_terminus = NA,
                                                                   y_terminus = NA,
                                                                   radius_x = NA,
-                                                                  radius_y = NA)))
+                                                                  radius_y = NA)),
+                                      edging = list(top = dplyr::filter(.data = cap_radii_df,
+                                                                        type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 0.5 - radius,
+                                                                    y_start = 1 - displacement,
+                                                                    x_end = 0.5 + radius,
+                                                                    y_end = 1 - displacement,
+                                                                    x_origin = 0.5 - radius,
+                                                                    y_origin = 0,
+                                                                    x_terminus = 0.5 + radius,
+                                                                    y_terminus = 0,
+                                                                    radius_x = radius,
+                                                                    radius_y = radius),
+                                                    bottom = dplyr::filter(.data = cap_radii_df,
+                                                                           type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 0.5 + radius,
+                                                                    y_start = displacement,
+                                                                    x_end = 0.5 - radius,
+                                                                    y_end = displacement,
+                                                                    x_origin = 0.5 + radius,
+                                                                    y_origin = 1,
+                                                                    x_terminus = 0.5 - radius,
+                                                                    y_terminus = 1,
+                                                                    radius_x = radius,
+                                                                    radius_y = radius),
+                                                    left = dplyr::filter(.data = cap_radii_df,
+                                                                         type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 1 - displacement,
+                                                                    y_start = 0.5 + radius,
+                                                                    x_end = 1 - displacement,
+                                                                    y_end = 0.5 - radius,
+                                                                    x_origin = 0,
+                                                                    y_origin = 0.5 + radius,
+                                                                    x_terminus = 0,
+                                                                    y_terminus = 0.5 - radius,
+                                                                    radius_x = radius,
+                                                                    radius_y = radius),
+                                                    right = dplyr::filter(.data = cap_radii_df,
+                                                                          type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = displacement,
+                                                                    y_start = 0.5 - radius,
+                                                                    x_end = displacement,
+                                                                    y_end = 0.5 + radius,
+                                                                    x_origin = 1,
+                                                                    y_origin = 0.5 - radius,
+                                                                    x_terminus = 1,
+                                                                    y_terminus = 0.5 + radius,
+                                                                    radius_x = radius,
+                                                                    radius_y = radius),
+                                                    top_left = dplyr::filter(.data = radii_df,
+                                                                             type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 0,
+                                                                    y_start = corner_radius,
+                                                                    x_end = corner_radius,
+                                                                    y_end = 0,
+                                                                    x_origin = NA,
+                                                                    y_origin = NA,
+                                                                    x_terminus = NA,
+                                                                    y_terminus = NA,
+                                                                    radius_x = corner_radius,
+                                                                    radius_y = corner_radius),
+                                                    bottom_left = dplyr::filter(.data = radii_df,
+                                                                                type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = corner_radius,
+                                                                    y_start = 1,
+                                                                    x_end = 0,
+                                                                    y_end = 1 - corner_radius,
+                                                                    x_origin = NA,
+                                                                    y_origin = NA,
+                                                                    x_terminus = NA,
+                                                                    y_terminus = NA,
+                                                                    radius_x = corner_radius,
+                                                                    radius_y = corner_radius),
+                                                    top_right = dplyr::filter(.data = radii_df,
+                                                                              type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 1- corner_radius,
+                                                                    y_start = 0,
+                                                                    x_end = 1,
+                                                                    y_end = corner_radius,
+                                                                    x_origin = NA,
+                                                                    y_origin = NA,
+                                                                    x_terminus = NA,
+                                                                    y_terminus = NA,
+                                                                    radius_x = corner_radius,
+                                                                    radius_y = corner_radius),
+                                                    bottom_right = dplyr::filter(.data = radii_df,
+                                                                                 type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 1,
+                                                                    y_start = 1 - corner_radius,
+                                                                    x_end = 1 - corner_radius,
+                                                                    y_end = 1,
+                                                                    x_origin = NA,
+                                                                    y_origin = NA,
+                                                                    x_terminus = NA,
+                                                                    y_terminus = NA,
+                                                                    radius_x = corner_radius,
+                                                                    radius_y = corner_radius),
+                                                    top_bottom = dplyr::filter(.data = radii_df,
+                                                                               type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = corner_radius,
+                                                                    y_start = 0,
+                                                                    x_end = corner_radius,
+                                                                    y_end = 1,
+                                                                    x_origin = NA,
+                                                                    y_origin = NA,
+                                                                    x_terminus = NA,
+                                                                    y_terminus = NA,
+                                                                    radius_x = NA,
+                                                                    radius_y = NA),
+                                                    left_right = dplyr::filter(.data = radii_df,
+                                                                               type == "edging") |>
+                                                      dplyr::mutate(.data = _,
+                                                                    x_start = 0,
+                                                                    y_start = corner_radius,
+                                                                    x_end = 1,
+                                                                    y_end = corner_radius,
+                                                                    x_origin = NA,
+                                                                    y_origin = NA,
+                                                                    x_terminus = NA,
+                                                                    y_terminus = NA,
+                                                                    radius_x = NA,
+                                                                    radius_y = NA)))
+                 }
+                 ###### Segments -----------------------------------------------
+                 if (input$arc_vertex_count > 0) {
+                   
+                   # There will be a vertex at each join between tiles and then
+                   # the number of vertices requested will be put between each.
+                   vertex_count <- 4 * (1 + input$arc_vertex_count)
+                   
+                   # The caps are all the same!!!!
+                   # The connecting ones (e.g., top_left) differ in format from
+                   # the arc ones above.
+                   base_lines <- lapply(X = c("line",
+                                              "edging"),
+                                        radii_df = radii_df,
+                                        cap_radii_df = cap_radii_df,
+                                        FUN = function(X, radii_df, cap_radii_df){
+                                          list(top = dplyr::filter(.data = cap_radii_df,
+                                                                   type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               x_start = 0.5 - radius,
+                                                               y_start = 1 - displacement,
+                                                               x_end = 0.5 + radius,
+                                                               y_end = 1 - displacement,
+                                                               x_origin = 0.5 - radius,
+                                                               y_origin = 0,
+                                                               x_terminus = 0.5 + radius,
+                                                               y_terminus = 0,
+                                                               radius_x = radius,
+                                                               radius_y = radius),
+                                               bottom = dplyr::filter(.data = cap_radii_df,
+                                                                      type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               x_start = 0.5 + radius,
+                                                               y_start = displacement,
+                                                               x_end = 0.5 - radius,
+                                                               y_end = displacement,
+                                                               x_origin = 0.5 + radius,
+                                                               y_origin = 1,
+                                                               x_terminus = 0.5 - radius,
+                                                               y_terminus = 1,
+                                                               radius_x = radius,
+                                                               radius_y = radius),
+                                               left = dplyr::filter(.data = cap_radii_df,
+                                                                    type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               x_start = 1 - displacement,
+                                                               y_start = 0.5 + radius,
+                                                               x_end = 1 - displacement,
+                                                               y_end = 0.5 - radius,
+                                                               x_origin = 0,
+                                                               y_origin = 0.5 + radius,
+                                                               x_terminus = 0,
+                                                               y_terminus = 0.5 - radius,
+                                                               radius_x = radius,
+                                                               radius_y = radius),
+                                               right = dplyr::filter(.data = cap_radii_df,
+                                                                     type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               x_start = displacement,
+                                                               y_start = 0.5 - radius,
+                                                               x_end = displacement,
+                                                               y_end = 0.5 + radius,
+                                                               x_origin = 1,
+                                                               y_origin = 0.5 - radius,
+                                                               x_terminus = 1,
+                                                               y_terminus = 0.5 + radius,
+                                                               radius_x = radius,
+                                                               radius_y = radius),
+                                               top_left = dplyr::filter(.data = radii_df,
+                                                                        type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               line_id = dplyr::row_number()) |>
+                                                 apply(X = _,
+                                                       MARGIN = 1,
+                                                       vertex_count = vertex_count,
+                                                       FUN = function(X, vertex_count){
+                                                         regular_polygon(vertex_count = vertex_count,
+                                                                         radius = as.numeric(X[["corner_radius"]]),
+                                                                         center_x = 0,
+                                                                         center_y = 0,
+                                                                         # output_type = "coords")[seq(from = 1 + (vertex_count / 4),
+                                                                         #                             to = 1 + (vertex_count / 4) * 2),] |>
+                                                                         output_type = "coords")[seq(from = 1,
+                                                                                                     to = 1 + (vertex_count / 4)),] |>
+                                                           dplyr::mutate(.data = _,
+                                                                         line_id = X[["line_id"]]) |>
+                                                           # Stupid, but for whatever reason pasting the values together and then
+                                                           # splitting them is the easiest way to get a vector of values in the
+                                                           # variable
+                                                           dplyr::summarize(.data = _,
+                                                                            .by = tidyselect::all_of(x = "line_id"),
+                                                                            x_coords = paste(x,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"),
+                                                                            y_coords = paste(y,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"))
+                                                       }) |>
+                                                 dplyr::bind_rows(),
+                                               bottom_left = dplyr::filter(.data = radii_df,
+                                                                           type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               line_id = dplyr::row_number()) |>
+                                                 apply(X = _,
+                                                       MARGIN = 1,
+                                                       vertex_count = vertex_count,
+                                                       FUN = function(X, vertex_count){
+                                                         vertices_df <- regular_polygon(vertex_count = vertex_count,
+                                                                                        radius = as.numeric(X[["corner_radius"]]),
+                                                                                        center_x = 0,
+                                                                                        center_y = 1,
+                                                                                        # output_type = "coords")[seq(from = 1 + (vertex_count / 4),
+                                                                                        #                             to = 1),] |>
+                                                                                        output_type = "coords")[c(1,
+                                                                                                                  seq(from = vertex_count,
+                                                                                                                    to = 1 + (vertex_count / 4) * 3)),] |>
+                                                           dplyr::mutate(.data = _,
+                                                                         line_id = X[["line_id"]]) |>
+                                                           # Stupid, but for whatever reason pasting the values together and then
+                                                           # splitting them is the easiest way to get a vector of values in the
+                                                           # variable
+                                                           dplyr::summarize(.data = _,
+                                                                            .by = tidyselect::all_of(x = "line_id"),
+                                                                            x_coords = paste(x,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"),
+                                                                            y_coords = paste(y,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"))
+                                                       }) |>
+                                                 dplyr::bind_rows(),
+                                               top_right = dplyr::filter(.data = radii_df,
+                                                                         type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               line_id = dplyr::row_number()) |>
+                                                 apply(X = _,
+                                                       MARGIN = 1,
+                                                       vertex_count = vertex_count,
+                                                       FUN = function(X, vertex_count){
+                                                         vertices_df <- regular_polygon(vertex_count = vertex_count,
+                                                                                        radius = as.numeric(X[["corner_radius"]]),
+                                                                                        center_x = 1,
+                                                                                        center_y = 0,
+                                                                                        # output_type = "coords")[seq(from = 1 + (vertex_count / 4) * 3,
+                                                                                        #                             to = 1 + (vertex_count / 4) * 2),] |>
+                                                                                        output_type = "coords")[seq(from = 1 + (vertex_count / 4) * 2,
+                                                                                                                    to = 1 + (vertex_count / 4)),] |>
+                                                           dplyr::mutate(.data = _,
+                                                                         line_id = X[["line_id"]]) |>
+                                                           # Stupid, but for whatever reason pasting the values together and then
+                                                           # splitting them is the easiest way to get a vector of values in the
+                                                           # variable
+                                                           dplyr::summarize(.data = _,
+                                                                            .by = tidyselect::all_of(x = "line_id"),
+                                                                            x_coords = paste(x,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"),
+                                                                            y_coords = paste(y,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"))
+                                                       }) |>
+                                                 dplyr::bind_rows(),
+                                               bottom_right = dplyr::filter(.data = radii_df,
+                                                                            type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               line_id = dplyr::row_number()) |>
+                                                 apply(X = _,
+                                                       MARGIN = 1,
+                                                       vertex_count = vertex_count,
+                                                       FUN = function(X, vertex_count){
+                                                         vertices_df <- regular_polygon(vertex_count = vertex_count,
+                                                                                        radius = as.numeric(X[["corner_radius"]]),
+                                                                                        center_x = 1,
+                                                                                        center_y = 1,
+                                                                                        # output_type = "coords")[c(seq(from = 1 + (vertex_count / 4) * 3,
+                                                                                        #                               to = (vertex_count / 4) * 4),
+                                                                                        #                           1),] |>
+                                                                                        output_type = "coords")[seq(from = 1 + (vertex_count / 4) * 2,
+                                                                                                                      to = 1 + (vertex_count / 4) * 3),] |>
+                                                           dplyr::mutate(.data = _,
+                                                                         line_id = X[["line_id"]]) |>
+                                                           # Stupid, but for whatever reason pasting the values together and then
+                                                           # splitting them is the easiest way to get a vector of values in the
+                                                           # variable
+                                                           dplyr::summarize(.data = _,
+                                                                            .by = tidyselect::all_of(x = "line_id"),
+                                                                            x_coords = paste(x,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"),
+                                                                            y_coords = paste(y,
+                                                                                             collapse = "_") |>
+                                                                              stringr::str_split(string = _,
+                                                                                                 pattern = "_"))
+                                                       }) |>
+                                                 dplyr::bind_rows(),
+                                               top_bottom = dplyr::filter(.data = radii_df,
+                                                                          type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               x_start = corner_radius,
+                                                               y_start = 0,
+                                                               x_end = corner_radius,
+                                                               y_end = 1,
+                                                               x_origin = NA,
+                                                               y_origin = NA,
+                                                               x_terminus = NA,
+                                                               y_terminus = NA,
+                                                               radius_x = NA,
+                                                               radius_y = NA),
+                                               left_right = dplyr::filter(.data = radii_df,
+                                                                          type == X) |>
+                                                 dplyr::mutate(.data = _,
+                                                               x_start = 0,
+                                                               y_start = corner_radius,
+                                                               x_end = 1,
+                                                               y_end = corner_radius,
+                                                               x_origin = NA,
+                                                               y_origin = NA,
+                                                               x_terminus = NA,
+                                                               y_terminus = NA,
+                                                               radius_x = NA,
+                                                               radius_y = NA))
+                                        }) |>
+                     setNames(object = _,
+                              nm = c("line",
+                                     "edging"))
+                   
+                   # base_lines <- list(line = list(top = dplyr::filter(.data = cap_radii_df,
+                   #                                                    type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                x_start = 0.5 - radius,
+                   #                                                y_start = 1 - displacement,
+                   #                                                x_end = 0.5 + radius,
+                   #                                                y_end = 1 - displacement,
+                   #                                                x_origin = 0.5 - radius,
+                   #                                                y_origin = 0,
+                   #                                                x_terminus = 0.5 + radius,
+                   #                                                y_terminus = 0,
+                   #                                                radius_x = radius,
+                   #                                                radius_y = radius),
+                   #                                bottom = dplyr::filter(.data = cap_radii_df,
+                   #                                                       type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                x_start = 0.5 + radius,
+                   #                                                y_start = displacement,
+                   #                                                x_end = 0.5 - radius,
+                   #                                                y_end = displacement,
+                   #                                                x_origin = 0.5 + radius,
+                   #                                                y_origin = 1,
+                   #                                                x_terminus = 0.5 - radius,
+                   #                                                y_terminus = 1,
+                   #                                                radius_x = radius,
+                   #                                                radius_y = radius),
+                   #                                left = dplyr::filter(.data = cap_radii_df,
+                   #                                                     type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                x_start = 1 - displacement,
+                   #                                                y_start = 0.5 + radius,
+                   #                                                x_end = 1 - displacement,
+                   #                                                y_end = 0.5 - radius,
+                   #                                                x_origin = 0,
+                   #                                                y_origin = 0.5 + radius,
+                   #                                                x_terminus = 0,
+                   #                                                y_terminus = 0.5 - radius,
+                   #                                                radius_x = radius,
+                   #                                                radius_y = radius),
+                   #                                right = dplyr::filter(.data = cap_radii_df,
+                   #                                                      type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                x_start = displacement,
+                   #                                                y_start = 0.5 - radius,
+                   #                                                x_end = displacement,
+                   #                                                y_end = 0.5 + radius,
+                   #                                                x_origin = 1,
+                   #                                                y_origin = 0.5 - radius,
+                   #                                                x_terminus = 1,
+                   #                                                y_terminus = 0.5 + radius,
+                   #                                                radius_x = radius,
+                   #                                                radius_y = radius),
+                   #                                top_left = dplyr::filter(.data = radii_df,
+                   #                                                         type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                line_id = dplyr::row_number()) |>
+                   #                                  apply(X = _,
+                   #                                        MARGIN = 1,
+                   #                                        vertex_count = vertex_count,
+                   #                                        FUN = function(X, vertex_count){
+                   #                                          regular_polygon(vertex_count = vertex_count,
+                   #                                                          radius = as.numeric(X[["corner_radius"]]),
+                   #                                                          center_x = 0,
+                   #                                                          center_y = 0,
+                   #                                                          output_type = "coords")[seq(from = 1 + (vertex_count / 4),
+                   #                                                                                      to = 1 + (vertex_count / 4) * 2),] |>
+                   #                                            dplyr::mutate(.data = _,
+                   #                                                          line_id = X[["line_id"]]) |>
+                   #                                            # Stupid, but for whatever reason pasting the values together and then
+                   #                                            # splitting them is the easiest way to get a vector of values in the
+                   #                                            # variable
+                   #                                            dplyr::summarize(.data = _,
+                   #                                                             .by = tidyselect::all_of(x = "line_id"),
+                   #                                                             x_coords = paste(x,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"),
+                   #                                                             y_coords = paste(y,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"))
+                   #                                        }) |>
+                   #                                  dplyr::bind_rows(),
+                   #                                bottom_left = dplyr::filter(.data = radii_df,
+                   #                                                            type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                line_id = dplyr::row_number()) |>
+                   #                                  apply(X = _,
+                   #                                        MARGIN = 1,
+                   #                                        vertex_count = vertex_count,
+                   #                                        FUN = function(X, vertex_count){
+                   #                                          vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                         radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                         center_x = 0,
+                   #                                                                         center_y = 1,
+                   #                                                                         output_type = "coords")[seq(from = 1 + (vertex_count / 4),
+                   #                                                                                                     to = 1),] |>
+                   #                                            dplyr::mutate(.data = _,
+                   #                                                          line_id = X[["line_id"]]) |>
+                   #                                            # Stupid, but for whatever reason pasting the values together and then
+                   #                                            # splitting them is the easiest way to get a vector of values in the
+                   #                                            # variable
+                   #                                            dplyr::summarize(.data = _,
+                   #                                                             .by = tidyselect::all_of(x = "line_id"),
+                   #                                                             x_coords = paste(x,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"),
+                   #                                                             y_coords = paste(y,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"))
+                   #                                        }) |>
+                   #                                  dplyr::bind_rows(),
+                   #                                top_right = dplyr::filter(.data = radii_df,
+                   #                                                          type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                line_id = dplyr::row_number()) |>
+                   #                                  apply(X = _,
+                   #                                        MARGIN = 1,
+                   #                                        vertex_count = vertex_count,
+                   #                                        FUN = function(X, vertex_count){
+                   #                                          vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                         radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                         center_x = 1,
+                   #                                                                         center_y = 0,
+                   #                                                                         output_type = "coords")[seq(from = 1 + (vertex_count / 4) * 3,
+                   #                                                                                                     to = 1 + (vertex_count / 4) * 2),] |>
+                   #                                            dplyr::mutate(.data = _,
+                   #                                                          line_id = X[["line_id"]]) |>
+                   #                                            # Stupid, but for whatever reason pasting the values together and then
+                   #                                            # splitting them is the easiest way to get a vector of values in the
+                   #                                            # variable
+                   #                                            dplyr::summarize(.data = _,
+                   #                                                             .by = tidyselect::all_of(x = "line_id"),
+                   #                                                             x_coords = paste(x,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"),
+                   #                                                             y_coords = paste(y,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"))
+                   #                                        }) |>
+                   #                                  dplyr::bind_rows(),
+                   #                                bottom_right = dplyr::filter(.data = radii_df,
+                   #                                                             type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                line_id = dplyr::row_number()) |>
+                   #                                  apply(X = _,
+                   #                                        MARGIN = 1,
+                   #                                        vertex_count = vertex_count,
+                   #                                        FUN = function(X, vertex_count){
+                   #                                          vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                         radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                         center_x = 1,
+                   #                                                                         center_y = 1,
+                   #                                                                         output_type = "coords")[c(seq(from = 1 + (vertex_count / 4) * 3,
+                   #                                                                                                       to = (vertex_count / 4) * 4),
+                   #                                                                                                   1),] |>
+                   #                                            dplyr::mutate(.data = _,
+                   #                                                          line_id = X[["line_id"]]) |>
+                   #                                            # Stupid, but for whatever reason pasting the values together and then
+                   #                                            # splitting them is the easiest way to get a vector of values in the
+                   #                                            # variable
+                   #                                            dplyr::summarize(.data = _,
+                   #                                                             .by = tidyselect::all_of(x = "line_id"),
+                   #                                                             x_coords = paste(x,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"),
+                   #                                                             y_coords = paste(y,
+                   #                                                                              collapse = "_") |>
+                   #                                                               stringr::str_split(string = _,
+                   #                                                                                  pattern = "_"))
+                   #                                        }) |>
+                   #                                  dplyr::bind_rows(),
+                   #                                top_bottom = dplyr::filter(.data = radii_df,
+                   #                                                           type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                x_start = corner_radius,
+                   #                                                y_start = 0,
+                   #                                                x_end = corner_radius,
+                   #                                                y_end = 1,
+                   #                                                x_origin = NA,
+                   #                                                y_origin = NA,
+                   #                                                x_terminus = NA,
+                   #                                                y_terminus = NA,
+                   #                                                radius_x = NA,
+                   #                                                radius_y = NA),
+                   #                                left_right = dplyr::filter(.data = radii_df,
+                   #                                                           type == "line") |>
+                   #                                  dplyr::mutate(.data = _,
+                   #                                                x_start = 0,
+                   #                                                y_start = corner_radius,
+                   #                                                x_end = 1,
+                   #                                                y_end = corner_radius,
+                   #                                                x_origin = NA,
+                   #                                                y_origin = NA,
+                   #                                                x_terminus = NA,
+                   #                                                y_terminus = NA,
+                   #                                                radius_x = NA,
+                   #                                                radius_y = NA)),
+                   #                    edging = list(top = dplyr::filter(.data = cap_radii_df,
+                   #                                                      type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  x_start = 0.5 - radius,
+                   #                                                  y_start = 1 - displacement,
+                   #                                                  x_end = 0.5 + radius,
+                   #                                                  y_end = 1 - displacement,
+                   #                                                  x_origin = 0.5 - radius,
+                   #                                                  y_origin = 0,
+                   #                                                  x_terminus = 0.5 + radius,
+                   #                                                  y_terminus = 0,
+                   #                                                  radius_x = radius,
+                   #                                                  radius_y = radius),
+                   #                                  bottom = dplyr::filter(.data = cap_radii_df,
+                   #                                                         type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  x_start = 0.5 + radius,
+                   #                                                  y_start = displacement,
+                   #                                                  x_end = 0.5 - radius,
+                   #                                                  y_end = displacement,
+                   #                                                  x_origin = 0.5 + radius,
+                   #                                                  y_origin = 1,
+                   #                                                  x_terminus = 0.5 - radius,
+                   #                                                  y_terminus = 1,
+                   #                                                  radius_x = radius,
+                   #                                                  radius_y = radius),
+                   #                                  left = dplyr::filter(.data = cap_radii_df,
+                   #                                                       type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  x_start = 1 - displacement,
+                   #                                                  y_start = 0.5 + radius,
+                   #                                                  x_end = 1 - displacement,
+                   #                                                  y_end = 0.5 - radius,
+                   #                                                  x_origin = 0,
+                   #                                                  y_origin = 0.5 + radius,
+                   #                                                  x_terminus = 0,
+                   #                                                  y_terminus = 0.5 - radius,
+                   #                                                  radius_x = radius,
+                   #                                                  radius_y = radius),
+                   #                                  right = dplyr::filter(.data = cap_radii_df,
+                   #                                                        type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  x_start = displacement,
+                   #                                                  y_start = 0.5 - radius,
+                   #                                                  x_end = displacement,
+                   #                                                  y_end = 0.5 + radius,
+                   #                                                  x_origin = 1,
+                   #                                                  y_origin = 0.5 - radius,
+                   #                                                  x_terminus = 1,
+                   #                                                  y_terminus = 0.5 + radius,
+                   #                                                  radius_x = radius,
+                   #                                                  radius_y = radius),
+                   #                                  top_left = dplyr::filter(.data = radii_df,
+                   #                                                           type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  line_id = dplyr::row_number()) |>
+                   #                                    apply(X = _,
+                   #                                          MARGIN = 1,
+                   #                                          vertex_count = vertex_count,
+                   #                                          FUN = function(X, vertex_count){
+                   #                                            vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                           radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                           center_x = 0,
+                   #                                                                           center_y = 0,
+                   #                                                                           output_type = "coords")[seq(from = 1 + (vertex_count / 4),
+                   #                                                                                                       to = 1 + (vertex_count / 4) * 2),] |>
+                   #                                              dplyr::mutate(.data = _,
+                   #                                                            line_id = X[["line_id"]]) |>
+                   #                                              # Stupid, but for whatever reason pasting the values together and then
+                   #                                              # splitting them is the easiest way to get a vector of values in the
+                   #                                              # variable
+                   #                                              dplyr::summarize(.data = _,
+                   #                                                               .by = tidyselect::all_of(x = "line_id"),
+                   #                                                               x_coords = paste(x,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"),
+                   #                                                               y_coords = paste(y,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"))
+                   #                                          }) |>
+                   #                                    dplyr::bind_rows(),
+                   #                                  bottom_left = dplyr::filter(.data = radii_df,
+                   #                                                              type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  line_id = dplyr::row_number()) |>
+                   #                                    apply(X = _,
+                   #                                          MARGIN = 1,
+                   #                                          vertex_count = vertex_count,
+                   #                                          FUN = function(X, vertex_count){
+                   #                                            vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                           radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                           center_x = 0,
+                   #                                                                           center_y = 1,
+                   #                                                                           output_type = "coords")[seq(from = 1 + (vertex_count / 4),
+                   #                                                                                                       to = 1),] |>
+                   #                                              dplyr::mutate(.data = _,
+                   #                                                            line_id = X[["line_id"]]) |>
+                   #                                              # Stupid, but for whatever reason pasting the values together and then
+                   #                                              # splitting them is the easiest way to get a vector of values in the
+                   #                                              # variable
+                   #                                              dplyr::summarize(.data = _,
+                   #                                                               .by = tidyselect::all_of(x = "line_id"),
+                   #                                                               x_coords = paste(x,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"),
+                   #                                                               y_coords = paste(y,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"))
+                   #                                          }) |>
+                   #                                    dplyr::bind_rows(),
+                   #                                  top_right = dplyr::filter(.data = radii_df,
+                   #                                                            type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  line_id = dplyr::row_number()) |>
+                   #                                    apply(X = _,
+                   #                                          MARGIN = 1,
+                   #                                          vertex_count = vertex_count,
+                   #                                          FUN = function(X, vertex_count){
+                   #                                            vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                           radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                           center_x = 1,
+                   #                                                                           center_y = 0,
+                   #                                                                           output_type = "coords")[seq(from = 1 + (vertex_count / 4) * 3,
+                   #                                                                                                       to = 1 + (vertex_count / 4) * 2),] |>
+                   #                                              dplyr::mutate(.data = _,
+                   #                                                            line_id = X[["line_id"]]) |>
+                   #                                              # Stupid, but for whatever reason pasting the values together and then
+                   #                                              # splitting them is the easiest way to get a vector of values in the
+                   #                                              # variable
+                   #                                              dplyr::summarize(.data = _,
+                   #                                                               .by = tidyselect::all_of(x = "line_id"),
+                   #                                                               x_coords = paste(x,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"),
+                   #                                                               y_coords = paste(y,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"))
+                   #                                          }) |>
+                   #                                    dplyr::bind_rows(),
+                   #                                  bottom_right = dplyr::filter(.data = radii_df,
+                   #                                                               type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  line_id = dplyr::row_number()) |>
+                   #                                    apply(X = _,
+                   #                                          MARGIN = 1,
+                   #                                          vertex_count = vertex_count,
+                   #                                          FUN = function(X, vertex_count){
+                   #                                            vertices_df <- regular_polygon(vertex_count = vertex_count,
+                   #                                                                           radius = as.numeric(X[["corner_radius"]]),
+                   #                                                                           center_x = 1,
+                   #                                                                           center_y = 1,
+                   #                                                                           output_type = "coords")[c(seq(from = 1 + (vertex_count / 4) * 3,
+                   #                                                                                                         to = (vertex_count / 4) * 4),
+                   #                                                                                                     1),] |>
+                   #                                              dplyr::mutate(.data = _,
+                   #                                                            line_id = X[["line_id"]]) |>
+                   #                                              # Stupid, but for whatever reason pasting the values together and then
+                   #                                              # splitting them is the easiest way to get a vector of values in the
+                   #                                              # variable
+                   #                                              dplyr::summarize(.data = _,
+                   #                                                               .by = tidyselect::all_of(x = "line_id"),
+                   #                                                               x_coords = paste(x,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"),
+                   #                                                               y_coords = paste(y,
+                   #                                                                                collapse = "_") |>
+                   #                                                                 stringr::str_split(string = _,
+                   #                                                                                    pattern = "_"))
+                   #                                          }) |>
+                   #                                    dplyr::bind_rows(),
+                   #                                  top_bottom = dplyr::filter(.data = radii_df,
+                   #                                                             type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  x_start = corner_radius,
+                   #                                                  y_start = 0,
+                   #                                                  x_end = corner_radius,
+                   #                                                  y_end = 1,
+                   #                                                  x_origin = NA,
+                   #                                                  y_origin = NA,
+                   #                                                  x_terminus = NA,
+                   #                                                  y_terminus = NA,
+                   #                                                  radius_x = NA,
+                   #                                                  radius_y = NA),
+                   #                                  left_right = dplyr::filter(.data = radii_df,
+                   #                                                             type == "edging") |>
+                   #                                    dplyr::mutate(.data = _,
+                   #                                                  x_start = 0,
+                   #                                                  y_start = corner_radius,
+                   #                                                  x_end = 1,
+                   #                                                  y_end = corner_radius,
+                   #                                                  x_origin = NA,
+                   #                                                  y_origin = NA,
+                   #                                                  x_terminus = NA,
+                   #                                                  y_terminus = NA,
+                   #                                                  radius_x = NA,
+                   #                                                  radius_y = NA)))
+                 }
                  
                  #### GENERATION ################################################################
                  ##### Make the base matrix -----------------------------------------------------
@@ -574,16 +1265,71 @@ server <- function(input, output) {
                  # This is a stub for eventually implementing intertwining palettes
                  id_value <- 1
                  
+                 # input <- list(n_rows = 3,
+                 #               n_cols = 4,
+                 #               # row_1 = c(TRUE, TRUE, TRUE, TRUE),
+                 #               # row_2 = c(FALSE, TRUE, TRUE, TRUE),
+                 #               # row_3 = c(TRUE, FALSE, FALSE, FALSE),
+                 #               row_1 = c(1, 2, 3, 4),
+                 #               row_2 = c(3, 4),
+                 #               row_3 = c(1, 2, 3))
+                 # 
+                 # base_vector <- lapply(X = paste0("row_", seq_len(input$n_rows)),
+                 #                       n_cols = input$n_cols,
+                 #                       FUN = function(X, n_cols){
+                 #                         output <- rep(FALSE,
+                 #                                       times = n_cols)
+                 #                         output[as.numeric(input[[X]])] <- TRUE
+                 #                         output
+                 #                       }) |>
+                 #   unlist()
+                 
+                 
+                 # base_vector <- lapply(X = seq_len(input$n_cols),
+                 #                       row_ids = paste0("row_", seq_len(input$n_rows)),
+                 #                       n_cols = input$n_cols,
+                 #                       n_rows = input$n_rows,
+                 #                       FUN = function(X, row_ids, n_cols, n_rows){
+                 #                         true_indices <- sapply(X = row_ids,
+                 #                                current_col_index = X,
+                 #                                FUN = function(X, current_col_index){
+                 #                                  input[[X]][current_col_index]
+                 #                                })
+                 #                         output <- rep(FALSE,
+                 #                                       times = n_cols)
+                 #                         output[true_indices] <- true_indices
+                 #                         output
+                 #                       }) |>
+                 #   unlist() |>
+                 #   matrix(data = _,
+                 #          nrow = input$n_rows) |>
+                 #   as.vector()
+                 
                  base_vector <- lapply(X = paste0("row_", seq_len(input$n_rows)),
                                        n_cols = input$n_cols,
-                                       FUN = function(X, n_cols){
-                                         output <- rep(FALSE,
+                                       id_value = id_value,
+                                       FUN = function(X, n_cols, id_value){
+                                         row_vector <- as.numeric(input[[X]])
+                                         # message("row_vector")
+                                         # message(class(row_vector))
+                                         # message(paste(row_vector,
+                                         #               collapse = " "))
+                                         output <- rep(x = 0,
                                                        times = n_cols)
-                                         output[as.numeric(input[[X]])] <- TRUE
+                                         # message("base output")
+                                         # message(paste(output,
+                                         #               collapse = " "))
+                                         output[row_vector] <- id_value
+                                         # message("modified output")
+                                         # message(paste(output,
+                                         #               collapse = " "))
                                          output
                                        }) |>
-                   unlist()
+                   do.call(what = rbind,
+                           args = _) |>
+                   as.vector(x = _)
                  
+                 message("Base vector:")
                  message(paste(base_vector,
                                collapse = " "))
                  
@@ -688,8 +1434,13 @@ server <- function(input, output) {
                                                          y = selected_adjacent_indices)
                  }
                  
+                 message("Base vector:")
+                 message(paste(base_vector,
+                               collapse = " "))
                  base_matrix <- matrix(data = base_vector,
                                        nrow = input$n_rows)
+                 message("Base matrix:")
+                 print(base_matrix)
                  workspace$base_matrix <- base_matrix
                  ##### Adjacency ------------------------------------------------------
                  # Figure out which cells are part of the blob that we'll be tiling.
@@ -943,9 +1694,10 @@ server <- function(input, output) {
                                      blob_indices = blob_indices,
                                      base_lines = base_lines,
                                      cell_connections_list = cell_connections_list,
-                                     n_row = input$n_rows,
+                                     n_rows = input$n_rows,
                                      relationship_list = relationship_list,
-                                     FUN = function(X, blob_indices, base_lines, cell_connections_list, n_rows, relationship_list){
+                                     arcs = input$arc_vertex_count == 0,
+                                     FUN = function(X, blob_indices, base_lines, cell_connections_list, n_rows, relationship_list, arcs){
                                        message(X)
                                        current_blob_index <- blob_indices[X]
                                        message(current_blob_index)
@@ -966,7 +1718,8 @@ server <- function(input, output) {
                                                        x_offset = x_offset,
                                                        y_offset = y_offset,
                                                        current_relationships = relationship_list[[X]],
-                                                       FUN = function(X, current_blob_index, tile_subunit_ids, base_lines, x_offset, y_offset, current_relationships){
+                                                       arcs = arcs,
+                                                       FUN = function(X, current_blob_index, tile_subunit_ids, base_lines, x_offset, y_offset, current_relationships, arcs){
                                                          message(X)
                                                          current_tile_subunit_id <- tile_subunit_ids[[X]]
                                                          message(current_tile_subunit_id)
@@ -980,110 +1733,218 @@ server <- function(input, output) {
                                                                                                                                         simplify = TRUE) |> as.vector()],
                                                                                                collapse = "_")
                                                          
-                                                         lapply(X = c("line",
-                                                                      "edging"),
-                                                                current_tile_subunit_id = current_tile_subunit_id,
-                                                                current_blob_index = current_blob_index,
-                                                                elevation = X,
-                                                                base_lines = base_lines,
-                                                                x_offset = x_offset,
-                                                                y_offset = y_offset,
-                                                                gradient_relationship_string = gradient_relationship_string,
-                                                                FUN = function(X, current_tile_subunit_id, current_blob_index, elevation = X, base_lines, x_offset, y_offset, gradient_relationship_string){
-                                                                  message(X)
-                                                                  
-                                                                  current_lines <- base_lines[[X]][[current_tile_subunit_id]]
-                                                                  
-                                                                  dplyr::mutate(.data = current_lines,
-                                                                                dplyr::across(.cols = tidyselect::matches(match = "^x_"),
-                                                                                              .fns = ~ .x + x_offset),
-                                                                                dplyr::across(.cols = tidyselect::matches(match = "^y_"),
-                                                                                              .fns = ~ .x + y_offset),
+                                                         lines_output <- lapply(X = c("line",
+                                                                                      "edging"),
+                                                                                current_tile_subunit_id = current_tile_subunit_id,
                                                                                 current_blob_index = current_blob_index,
-                                                                                tile_subunit_id = current_tile_subunit_id,
-                                                                                type = X,
-                                                                                elevation = elevation,
+                                                                                elevation = X,
+                                                                                base_lines = base_lines,
                                                                                 x_offset = x_offset,
                                                                                 y_offset = y_offset,
-                                                                                path_string = dplyr::case_when(!(tile_subunit_id %in% c("top_bottom",
-                                                                                                                                        "left_right",
-                                                                                                                                        "top",
-                                                                                                                                        "bottom",
-                                                                                                                                        "left",
-                                                                                                                                        "right")) ~ paste("M",
-                                                                                                                                                          round(x_start,
-                                                                                                                                                                digits = 5),
-                                                                                                                                                          round(y_start,
-                                                                                                                                                                digits = 5),
-                                                                                                                                                          # This is the x axis radius
-                                                                                                                                                          # and the y axis radius
-                                                                                                                                                          "A",
-                                                                                                                                                          radius_x,
-                                                                                                                                                          radius_y,
-                                                                                                                                                          # These are rotation,
-                                                                                                                                                          # large-arc-flag,
-                                                                                                                                                          # and sweep-flag.
-                                                                                                                                                          # We want no rotation,
-                                                                                                                                                          # the small arc,
-                                                                                                                                                          # and counter-clockwise sweep
-                                                                                                                                                          0, 0, 0,
-                                                                                                                                                          # The endpoint for the
-                                                                                                                                                          # arc
-                                                                                                                                                          round(x_end,
-                                                                                                                                                                digits = 5),
-                                                                                                                                                          round(y_end,
-                                                                                                                                                                digits = 5)),
-                                                                                                               current_tile_subunit_id %in% c("top_bottom",
-                                                                                                                                              "left_right") ~ paste("M",
-                                                                                                                                                                    round(x_start,
-                                                                                                                                                                          digits = 5),
-                                                                                                                                                                    round(y_start,
-                                                                                                                                                                          digits = 5),
-                                                                                                                                                                    # This is stupid but it lets us
-                                                                                                                                                                    # add a second dimension so that
-                                                                                                                                                                    # the gradient will work.
-                                                                                                                                                                    # Basically, move to the halfway
-                                                                                                                                                                    # point and put the tiniest
-                                                                                                                                                                    # possible juke in it that
-                                                                                                                                                                    # most SVG rendering engines
-                                                                                                                                                                    # can still recognize.
-                                                                                                                                                                    "l",
-                                                                                                                                                                    (x_end - x_start) * 0.5,
-                                                                                                                                                                    (y_end - y_start) * 0.5,
-                                                                                                                                                                    "l 0.01 0.01",
-                                                                                                                                                                    "l -0.01 -0.01",
-                                                                                                                                                                    "L",
-                                                                                                                                                                    round(x_end,
-                                                                                                                                                                          digits = 5),
-                                                                                                                                                                    round(y_end,
-                                                                                                                                                                          digits = 5)),
-                                                                                                               current_tile_subunit_id %in% c("top",
-                                                                                                                                              "bottom",
-                                                                                                                                              "left",
-                                                                                                                                              "right") ~ paste("M",
-                                                                                                                                                               x_origin,
-                                                                                                                                                               y_origin,
-                                                                                                                                                               "L",
-                                                                                                                                                               x_start, y_start,
-                                                                                                                                                               "A",
-                                                                                                                                                               radius_x, radius_y,
-                                                                                                                                                               0, 0, 0,
-                                                                                                                                                               x_end, y_end,
-                                                                                                                                                               "L",
-                                                                                                                                                               x_terminus, y_terminus)),
-                                                                                gradient_id = paste(type,
-                                                                                                    elevation,
-                                                                                                    tile_subunit_id,
-                                                                                                    gradient_relationship_string,
-                                                                                                    sep = "-"))
-                                                                }) |>
+                                                                                gradient_relationship_string = gradient_relationship_string,
+                                                                                arcs = arcs,
+                                                                                FUN = function(X, current_tile_subunit_id, current_blob_index, elevation, base_lines, x_offset, y_offset, gradient_relationship_string, arcs){
+                                                                                  message(X)
+                                                                                  
+                                                                                  current_lines <- base_lines[[X]][[current_tile_subunit_id]]
+                                                                                  
+                                                                                  # Hacky, but to prevent complaints from dplyr::case_when()
+                                                                                  # because it can't find variables for situations that aren't
+                                                                                  # being triggered but are defined.
+                                                                                  missing_vars <- setdiff(y = names(current_lines),
+                                                                                                          x = c(paste0("x_",
+                                                                                                                       c("start",
+                                                                                                                         "end",
+                                                                                                                         "origin",
+                                                                                                                         "terminus",
+                                                                                                                         "coords")),
+                                                                                                                paste0("y_",
+                                                                                                                       c("start",
+                                                                                                                         "end",
+                                                                                                                         "origin",
+                                                                                                                         "terminus",
+                                                                                                                         "coords")),
+                                                                                                                paste0("radius_",
+                                                                                                                       c("x",
+                                                                                                                         "y"))))
+                                                                                  
+                                                                                  for (missing_var in missing_vars) {
+                                                                                    current_lines[[missing_var]] <- NA
+                                                                                  }
+                                                                                  
+                                                                                  lines_output <- dplyr::mutate(.data = current_lines,
+                                                                                                                # This is silly, but it allows this to handle both
+                                                                                                                # The lists of vertices in the x_coords and y_coords
+                                                                                                                # variables AND the various unlisted x_* and y_*
+                                                                                                                # variables for the arcs.
+                                                                                                                dplyr::across(.cols = tidyselect::matches(match = "^x_"),
+                                                                                                                              .fns = ~ switch(class(.x),
+                                                                                                                                              "list" = {
+                                                                                                                                                lapply(X = .x,
+                                                                                                                                                       x_offset = x_offset,
+                                                                                                                                                       FUN = function(X, x_offset){
+                                                                                                                                                         as.numeric(X) + x_offset
+                                                                                                                                                       })
+                                                                                                                                              },
+                                                                                                                                              {
+                                                                                                                                                as.numeric(.x) + x_offset
+                                                                                                                                              })),
+                                                                                                                dplyr::across(.cols = tidyselect::matches(match = "^y_"),
+                                                                                                                              .fns = ~ switch(class(.x),
+                                                                                                                                              "list" = {
+                                                                                                                                                lapply(X = .x,
+                                                                                                                                                       y_offset = y_offset,
+                                                                                                                                                       FUN = function(X, y_offset){
+                                                                                                                                                         as.numeric(X) + y_offset
+                                                                                                                                                       })
+                                                                                                                                              },
+                                                                                                                                              {
+                                                                                                                                                as.numeric(.x) + y_offset
+                                                                                                                                              })),
+                                                                                                                current_blob_index = current_blob_index,
+                                                                                                                tile_subunit_id = current_tile_subunit_id,
+                                                                                                                type = X,
+                                                                                                                elevation = elevation,
+                                                                                                                x_offset = x_offset,
+                                                                                                                y_offset = y_offset,
+                                                                                                                path_string = dplyr::case_when(!(tile_subunit_id %in% c("top_bottom",
+                                                                                                                                                                        "left_right",
+                                                                                                                                                                        "top",
+                                                                                                                                                                        "bottom",
+                                                                                                                                                                        "left",
+                                                                                                                                                                        "right")) ~ paste("M",
+                                                                                                                                                                                          round(x_start,
+                                                                                                                                                                                                digits = 5),
+                                                                                                                                                                                          round(y_start,
+                                                                                                                                                                                                digits = 5),
+                                                                                                                                                                                          # This is the x axis radius
+                                                                                                                                                                                          # and the y axis radius
+                                                                                                                                                                                          "A",
+                                                                                                                                                                                          radius_x,
+                                                                                                                                                                                          radius_y,
+                                                                                                                                                                                          # These are rotation,
+                                                                                                                                                                                          # large-arc-flag,
+                                                                                                                                                                                          # and sweep-flag.
+                                                                                                                                                                                          # We want no rotation,
+                                                                                                                                                                                          # the small arc,
+                                                                                                                                                                                          # and counter-clockwise sweep
+                                                                                                                                                                                          0, 0, 0,
+                                                                                                                                                                                          # The endpoint for the
+                                                                                                                                                                                          # arc
+                                                                                                                                                                                          round(x_end,
+                                                                                                                                                                                                digits = 5),
+                                                                                                                                                                                          round(y_end,
+                                                                                                                                                                                                digits = 5)),
+                                                                                                                                               # # For when there are line segments and it's not the straightaways!
+                                                                                                                                               # # This will turn the vectors of coordinates into paths where the
+                                                                                                                                               # # First coordinate pair is prefixed with "M" and the subsequent ones
+                                                                                                                                               # # with "L" because we want to define these in absolute terms
+                                                                                                                                               # !arcs & !(tile_subunit_id %in% c("top_bottom",
+                                                                                                                                               #                                  "left_right",
+                                                                                                                                               #                                  "top",
+                                                                                                                                               #                                  "bottom",
+                                                                                                                                               #                                  "left",
+                                                                                                                                               #                                  "right")) ~ mapply(X = x_coords,
+                                                                                                                                               #                                                     Y = y_coords,
+                                                                                                                                               #                                                     command_prefix = c("M",
+                                                                                                                                               #                                                                        rep(x = "L",
+                                                                                                                                               #                                                                            times = input$arc_vertex_count + 1)),
+                                                                                                                                               #                                                     FUN = function(X, Y, command_prefix){
+                                                                                                                                               #                                                       paste0(command_prefix, " ",
+                                                                                                                                               #                                                              X, ",", Y)
+                                                                                                                                               #                                                     }),
+                                                                                                                                               tile_subunit_id %in% c("top_bottom",
+                                                                                                                                                                      "left_right") ~ paste("M",
+                                                                                                                                                                                            round(x_start,
+                                                                                                                                                                                                  digits = 5),
+                                                                                                                                                                                            round(y_start,
+                                                                                                                                                                                                  digits = 5),
+                                                                                                                                                                                            # This is stupid but it lets us
+                                                                                                                                                                                            # add a second dimension so that
+                                                                                                                                                                                            # the gradient will work.
+                                                                                                                                                                                            # Basically, move to the halfway
+                                                                                                                                                                                            # point and put the tiniest
+                                                                                                                                                                                            # possible juke in it that
+                                                                                                                                                                                            # most SVG rendering engines
+                                                                                                                                                                                            # can still recognize.
+                                                                                                                                                                                            "l",
+                                                                                                                                                                                            (x_end - x_start) * 0.5,
+                                                                                                                                                                                            (y_end - y_start) * 0.5,
+                                                                                                                                                                                            "l 0.01 0.01",
+                                                                                                                                                                                            "l -0.01 -0.01",
+                                                                                                                                                                                            "L",
+                                                                                                                                                                                            round(x_end,
+                                                                                                                                                                                                  digits = 5),
+                                                                                                                                                                                            round(y_end,
+                                                                                                                                                                                                  digits = 5)),
+                                                                                                                                               tile_subunit_id %in% c("top",
+                                                                                                                                                                      "bottom",
+                                                                                                                                                                      "left",
+                                                                                                                                                                      "right") ~ paste("M",
+                                                                                                                                                                                       x_origin,
+                                                                                                                                                                                       y_origin,
+                                                                                                                                                                                       "L",
+                                                                                                                                                                                       x_start, y_start,
+                                                                                                                                                                                       "A",
+                                                                                                                                                                                       radius_x, radius_y,
+                                                                                                                                                                                       0, 0, 0,
+                                                                                                                                                                                       x_end, y_end,
+                                                                                                                                                                                       "L",
+                                                                                                                                                                                       x_terminus, y_terminus)),
+                                                                                                                gradient_id = paste(type,
+                                                                                                                                    elevation,
+                                                                                                                                    tile_subunit_id,
+                                                                                                                                    gradient_relationship_string,
+                                                                                                                                    sep = "-"))
+                                                                                }) |>
                                                            # setNames(object = _,
                                                            #          nm = c("base",
                                                            #                 "edging"))
                                                            dplyr::bind_rows()
+                                                         
+                                                         
+                                                         # Very stupid, but this is to build the line segment paths for
+                                                         # tiles that don't have arcs.
+                                                         # It was way easier to do it here than keep fighting the mutate above.
+                                                         if (!arcs) {
+                                                           relevant_subtiles = c("top_left",
+                                                                                 "bottom_left",
+                                                                                 "top_right",
+                                                                                 "bottom_right")
+                                                           corrected_paths <- apply(X = lines_output,
+                                                                                    relevant_subtiles = relevant_subtiles,
+                                                                                    command_prefixes = c("M",
+                                                                                                         rep(x = "L",
+                                                                                                             times = input$arc_vertex_count + 1)),
+                                                                                    MARGIN = 1,
+                                                                                    FUN = function(X, relevant_subtiles, command_prefixes){
+                                                                                      
+                                                                                      if (X[["tile_subunit_id"]] %in% relevant_subtiles) {
+                                                                                        mapply(X = X[["x_coords"]],
+                                                                                               Y = X[["y_coords"]],
+                                                                                               command_prefix = command_prefixes,
+                                                                                               FUN = function(X, Y, command_prefix){
+                                                                                                 paste0(command_prefix, " ",
+                                                                                                        X, ",", Y)
+                                                                                               }) |>
+                                                                                          paste(collapse = " ") 
+                                                                                      } else {
+                                                                                        X[["path_string"]]
+                                                                                      }
+                                                                                    })
+                                                           lines_output[lines_output[["tile_subunit_id"]] %in% relevant_subtiles, "path_string"] <- corrected_paths
+                                                         }
+                                                         
+                                                         lines_output
                                                        })
                                        # tiles
-                                       dplyr::bind_rows(tiles)
+                                       dplyr::bind_rows(tiles) |>
+                                         # Chuck x_coords and y_coords because
+                                         # they can cause class conflicts and we
+                                         # don't need them anymore.
+                                         dplyr::select(.data = _,
+                                                       -tidyselect::any_of(x = c("x_coords",
+                                                                                 "y_coords")))
                                      }) |>
                    dplyr::bind_rows()
                  
@@ -1214,11 +2075,11 @@ server <- function(input, output) {
                  # These apply the basic properties across all lines and edging lines
                  message("classes")
                  base_classes <- c(paste0(".edging {stroke-width:", edging_width * 1.05,";",
-                                          "stroke-linecap:'butt';fill:none;}"),
+                                          "stroke-linecap:round;fill:none;}"),
                                    paste0(".line {stroke-width:", line_width,";",
-                                          "stroke-linecap:'butt';fill:none;}"),
+                                          "stroke-linecap:round;fill:none;}"),
                                    paste0(".line-cap {stroke-width:", line_width / 2,";",
-                                          "stroke-linecap:'butt';fill:none;}")) |>
+                                          "stroke-linecap:round;fill:none;}")) |>
                    paste(collapse = "
         ")
                  
