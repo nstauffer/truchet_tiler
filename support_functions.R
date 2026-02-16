@@ -14,8 +14,8 @@ regular_polygon <- function(vertex_count,
   if (!is.null(radius) & !is.numeric(radius)) {
     stop("radius must be numeric or NULL.")
   }
-  if (!(output_type %in% c("coords", "path"))) {
-    stop("output_type must be either 'coords' or 'path'.")
+  if (!(output_type %in% c("coords", "path", "polygon"))) {
+    stop("output_type must be one of 'coords', 'polygon', or 'path'.")
   }
   
   if (!is.null(side_length)) {
@@ -52,21 +52,21 @@ regular_polygon <- function(vertex_count,
   
   if (output_type == "coords") {
     coords
-  } else {
+  } else if (output_type == "path") {
     # This builds the path for a closed polygon in CSS using the coordinates
     polygon_steps <- sapply(X = 1:vertex_count,
                             coords = coords,
                             FUN = function(X, coords) {
                               if (X == 1) {
                                 paste0("M",
-                                       coords$x,
+                                       coords$x[X],
                                        " ",
-                                       coords$y)
+                                       coords$y[X])
                               } else {
                                 paste0("L",
-                                       coords$x,
+                                       coords$x[X],
                                        " ",
-                                       coords$y)
+                                       coords$y[X])
                               }
                             })
     
@@ -75,20 +75,21 @@ regular_polygon <- function(vertex_count,
                      "Z")
     
     path_d
+  } else {
+    dplyr::mutate(.data = coords,
+                  pairs = paste0(x, ",", y)) |>
+      dplyr::pull(.data = _,
+                  pairs) |>
+      paste(collapse = " ")
   }
 }
 
-arc_vertex_count <- 2
+# arc_vertex_count <- 2
+# 
+# # If not orthogonal continuation
+# vertex_count <- 4 + 4 * arc_vertex_count
+# 
+# # # If orthogonal continuation
+# # vertex_count <- arc_vertex_count
+# 
 
-# If not orthogonal continuation
-vertex_count <- 4 + 4 * arc_vertex_count
-
-# # If orthogonal continuation
-# vertex_count <- arc_vertex_count
-
-test_coords <- regular_polygon(vertex_count = 4,
-                               radius = 45,
-                               side_length = NULL,
-                               center_x = 0,
-                               center_y = 0,
-                               output_type = "coords")
