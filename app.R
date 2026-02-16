@@ -66,7 +66,7 @@ workspace <- list(temp_dir = "www",
 ui <- fluidPage(
   
   # Application title
-  titlePanel("Truchet Tiler v0.7.0"),
+  titlePanel("Truchet Tiler v0.8.0"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
